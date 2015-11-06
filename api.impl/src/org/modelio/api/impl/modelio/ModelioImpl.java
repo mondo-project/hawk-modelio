@@ -1,31 +1,39 @@
 package org.modelio.api.impl.modelio;
 
+import java.io.File;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
 import javax.inject.Inject;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
+
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.core.di.extensions.EventTopic;
+import org.eclipse.gef.palette.PaletteEntry;
 import org.eclipse.swt.widgets.Display;
 import org.modelio.api.app.IModelioContext;
 import org.modelio.api.app.navigation.INavigationService;
 import org.modelio.api.app.picking.IPickingProvider;
 import org.modelio.api.app.picking.IPickingService;
 import org.modelio.api.audit.IAuditService;
+import org.modelio.api.diagram.ContributorCategory;
+import org.modelio.api.diagram.IDiagramCustomizer;
+import org.modelio.api.diagram.IDiagramHandle;
 import org.modelio.api.diagram.IDiagramService;
+import org.modelio.api.diagram.autodiagram.IAutoDiagramFactory;
+import org.modelio.api.diagram.style.IStyleHandle;
+import org.modelio.api.diagram.tools.IAttachedBoxCommand;
+import org.modelio.api.diagram.tools.IBoxCommand;
+import org.modelio.api.diagram.tools.ILinkCommand;
+import org.modelio.api.diagram.tools.IMultiLinkCommand;
 import org.modelio.api.editor.IEditionService;
 import org.modelio.api.exchange.IExchangeService;
 import org.modelio.api.impl.app.ModelioContext;
 import org.modelio.api.impl.app.ScriptService;
-import org.modelio.api.impl.app.navigation.NavigationService;
 import org.modelio.api.impl.app.picking.PickingService;
 import org.modelio.api.impl.app.picking.PickingSessionProxy;
-import org.modelio.api.impl.audit.AuditService;
-import org.modelio.api.impl.diagrams.DiagramService;
-import org.modelio.api.impl.editor.EditionService;
 import org.modelio.api.impl.exchange.ExchangeService;
 import org.modelio.api.impl.log.LogService;
 import org.modelio.api.impl.mc.ModelComponentService;
@@ -43,14 +51,18 @@ import org.modelio.api.model.IModelingSession;
 import org.modelio.api.modelio.Modelio;
 import org.modelio.api.module.IModuleService;
 import org.modelio.api.module.script.IScriptService;
-import org.modelio.app.core.IModelioEventService;
+import org.modelio.api.ui.diagramcreation.IDiagramWizardContributor;
 import org.modelio.app.core.events.ModelioEventTopics;
 import org.modelio.app.core.picking.IModelioPickingService;
 import org.modelio.app.core.picking.IPickingSession;
 import org.modelio.app.project.core.services.IProjectService;
 import org.modelio.gproject.gproject.GProject;
 import org.modelio.gproject.model.IMModelServices;
-import org.modelio.vaudit.modelshield.ModelShield;
+import org.modelio.metamodel.diagrams.AbstractDiagram;
+import org.modelio.metamodel.uml.infrastructure.Stereotype;
+import org.modelio.vcore.smkernel.mapi.MClass;
+
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
 
 /**
  * This class a the class that represents the modelio application.
@@ -59,7 +71,107 @@ import org.modelio.vaudit.modelshield.ModelShield;
  */
 @objid ("d8736b08-26ab-4300-976b-ef3ec3a9e3d1")
 public class ModelioImpl extends Modelio {
-    @objid ("473953da-ef7d-4563-89d4-02d1f24e33c4")
+    private final class NullDiagramService implements IDiagramService {
+		@Override
+		public IAutoDiagramFactory getAutoDiagramFactory() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public IStyleHandle getStyle(String name) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public List<IStyleHandle> listStyles() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public IStyleHandle registerStyle(String styleName, String baseStyleName, File styleData) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public IDiagramHandle getDiagramHandle(AbstractDiagram diagram) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public PaletteEntry getRegisteredTool(String id) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public void registerCustomizedTool(String id, MClass metaclass, Stereotype stereotype, String dependency,
+				IBoxCommand handler) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void registerCustomizedTool(String id, MClass metaclass, Stereotype stereotype, String dependency,
+				IAttachedBoxCommand handler) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void registerCustomizedTool(String id, MClass metaclass, Stereotype stereotype, String dependency,
+				ILinkCommand handler) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void registerCustomizedTool(String id, MClass metaclass, Stereotype stereotype, String dependency,
+				IMultiLinkCommand handler) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void registerDiagramCustomization(Stereotype stereotype, MClass baseDiagramClass,
+				IDiagramCustomizer customizer) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void unregisterDiagramCustomization(Stereotype stereotype, MClass baseDiagramClass,
+				IDiagramCustomizer customizer) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void unregisterCustomizedTool(String id) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void registerDiagramContributor(ContributorCategory category,
+				IDiagramWizardContributor contributor) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void unregisterDiagramContributor(ContributorCategory category,
+				IDiagramWizardContributor contributor) {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+
+	@objid ("473953da-ef7d-4563-89d4-02d1f24e33c4")
     @Inject
     private IEclipseContext eclipseContext;
 
@@ -194,7 +306,7 @@ public class ModelioImpl extends Modelio {
     @objid ("42b90af5-1701-49d6-bb27-315df2f68a70")
     @Execute
     void initialize(IEclipseContext context) {
-        this.eclipseContext = context;       
+        this.eclipseContext = context;
         Modelio.instance = this;
     }
 
@@ -213,7 +325,7 @@ public class ModelioImpl extends Modelio {
     @objid ("64d34c74-89d2-4563-999e-2889f7f3e111")
     @Inject
     @Optional
-    void onProjectOpening(@EventTopic(ModelioEventTopics.PROJECT_OPENING) final GProject newProject) {
+    public void onProjectOpening(@EventTopic(ModelioEventTopics.PROJECT_OPENING) final GProject newProject) {
         this.openedProject =  newProject;
         this.modelingSession = null;
     }
@@ -267,15 +379,6 @@ public class ModelioImpl extends Modelio {
     private void initializeServices() {
         Map<Class<?>, Object> services = this.serviceMap;
         
-        IAuditService auditService = new AuditService(this.eclipseContext.get(ModelShield.class),this.eclipseContext.get(org.modelio.audit.service.IAuditService.class));    
-        services.put(IAuditService.class, auditService);
-               
-        IDiagramService diagramService = new DiagramService(this.eclipseContext);
-        services.put(IDiagramService.class, diagramService);
-          
-        IEditionService editionService = new EditionService(this.eclipseContext.get(IModelioEventService.class));
-        services.put(IEditionService.class, editionService);
-              
         IExchangeService exchangeService = new ExchangeService(this.eclipseContext);
         services.put(IExchangeService.class, exchangeService);
               
@@ -288,8 +391,8 @@ public class ModelioImpl extends Modelio {
         IModelManipulationService modelManipulationService = new ModelManipulationService();
         services.put(IModelManipulationService.class, modelManipulationService);
               
-        INavigationService navigationService = ContextInjectionFactory.make(NavigationService.class, this.eclipseContext);
-        services.put(INavigationService.class, navigationService);
+//        INavigationService navigationService = ContextInjectionFactory.make(NavigationService.class, this.eclipseContext);
+//        services.put(INavigationService.class, navigationService);
               
         IPickingService pickingService = new PickingService(this.eclipseContext.get(IModelioPickingService.class));
         services.put(IPickingService.class, pickingService);
@@ -305,7 +408,10 @@ public class ModelioImpl extends Modelio {
         
         IModuleService moduleService = new ModuleService(coreService.getModuleRegistry());
         services.put(IModuleService.class, moduleService);
-        
+
+        // Extra null diagram service, to reduce errors when running without diagram plugins
+        services.put(IDiagramService.class,  new NullDiagramService());
+
         this.servicesInitialized = true;
     }
 

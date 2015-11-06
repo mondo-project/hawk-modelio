@@ -46,6 +46,7 @@ import org.modelio.mda.infra.plugin.MdaInfra;
  */
 @objid ("aa507ee3-b6c8-471f-836b-6097781f4c45")
 public class ModuleServiceInitializer {
+	
     @objid ("6b428c7e-8d37-467f-b2cb-c30c6df89c74")
     @Execute
     private static void execute(IEclipseContext context) {
@@ -60,7 +61,10 @@ public class ModuleServiceInitializer {
      */
     @objid ("85f146e7-5f64-4268-a140-9cef33804584")
     private static void initModuleCache(IEclipseContext context) {
-        final ModelioEnv env = context.get(ModelioEnv.class);
+        ModelioEnv env = context.get(ModelioEnv.class);
+        if (env == null) {
+            env = ContextInjectionFactory.make(ModelioEnv.class, context);
+        }
         
         // Instantiate and register the module catalog
         final FileModuleStore stdModuleCatalog = new FileModuleStore(env.getModuleCatalogPath());

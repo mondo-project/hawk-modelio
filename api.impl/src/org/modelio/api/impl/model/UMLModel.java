@@ -5,12 +5,10 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-import com.modeliosoft.modelio.javadesigner.annotations.objid;
+
 import org.modelio.api.model.IDefaultNameService;
 import org.modelio.api.model.IUMLTypes;
 import org.modelio.api.model.IUmlModel;
-import org.modelio.editors.richnote.editor.IRichNoteFileRepository;
-import org.modelio.editors.richnote.management.RichNotesSession;
 import org.modelio.gproject.fragment.IProjectFragment;
 import org.modelio.gproject.gproject.GProject;
 import org.modelio.gproject.model.IMModelServices;
@@ -250,6 +248,8 @@ import org.modelio.metamodel.uml.statik.TemplateParameterSubstitution;
 import org.modelio.vcore.session.api.model.IModel;
 import org.modelio.vcore.smkernel.mapi.MObject;
 import org.modelio.vcore.smkernel.meta.SmClass;
+
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
 
 /**
  * The UMLModel provide navigation and modification in the UML model represented
@@ -4006,10 +4006,10 @@ public class UMLModel implements IUmlModel {
             final ExternDocument doc = this.modelService.getModelFactory().createExternDocument(moduleName, documentRole, owner, mimeType);
             
             // Initialize the document
-            if (initialContent != null) {
-                IRichNoteFileRepository fileRepository = RichNotesSession.get(this.openedProject).getFileRepository();
-                fileRepository.initRichNoteFromFile(doc, initialContent);
-            }
+//            if (initialContent != null) {
+//                IRichNoteFileRepository fileRepository = RichNotesSession.get(this.openedProject).getFileRepository();
+//                fileRepository.initRichNoteFromFile(doc, initialContent);
+//            }
             
             return doc;
         } catch (ExtensionNotFoundException e) {
