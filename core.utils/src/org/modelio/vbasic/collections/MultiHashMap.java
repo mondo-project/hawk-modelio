@@ -24,6 +24,7 @@ package org.modelio.vbasic.collections;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 import com.modeliosoft.modelio.javadesigner.annotations.objid;
 
 /**
@@ -99,7 +100,6 @@ public class MultiHashMap<K, V> extends HashMap<K,List<V>> {
      * @return true if the value was removed, false if it was not mapped to the given key.
      */
     @objid ("9e9601ca-1f4a-11e2-8814-001ec947c8cc")
-    @Override
     public boolean remove(Object key, Object value) {
         final List<V> vals = get(key);
         if (vals == null) {
