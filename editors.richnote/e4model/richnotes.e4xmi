@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_uCSA0M3eEeKokIEX2UZrTQ">
+  <imports xsi:type="commands:Command" xmi:id="_vPaiUM3eEeKokIEX2UZrTQ" elementId="org.modelio.edition.notes.command.addexterndocument"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_zBDA4M3eEeKokIEX2UZrTQ" featurename="handlers" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Handler" xmi:id="_3yYo8M3eEeKokIEX2UZrTQ" elementId="org.modelio.editors.richnote.handler.addrichnote" contributionURI="bundleclass://org.modelio.editors.richnote/org.modelio.editors.richnote.gui.handler.AddRichNoteHandler" command="_vPaiUM3eEeKokIEX2UZrTQ"/>
+  </fragments>
+</fragment:ModelFragments>

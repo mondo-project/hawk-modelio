@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_osPrELoPEeGR05fGaOD0Vw">
+  <imports xsi:type="commands:Command" xmi:id="_NXKUIFTtEeK4YallPPLLhg" elementId="org.eclipse.ui.edit.delete"/>
+  <imports xsi:type="commands:Command" xmi:id="_4_zkAFTtEeK4YallPPLLhg" elementId="org.modelio.app.ui.command.copy"/>
+  <imports xsi:type="commands:Command" xmi:id="_5i5qAFTtEeK4YallPPLLhg" elementId="org.modelio.app.ui.command.cut"/>
+  <imports xsi:type="commands:Command" xmi:id="_5mVYgFTtEeK4YallPPLLhg" elementId="org.modelio.app.ui.command.paste"/>
+  <imports xsi:type="menu:Menu" xmi:id="_LG0VMH9KEeK-XvSICEmsLA" elementId="org.modelio.app.ui.menu.views"/>
+  <imports xsi:type="commands:Command" xmi:id="_SxKxwH9KEeK-XvSICEmsLA" elementId="org.modelio.app.ui.command.showview"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_EsN88LoQEeGR05fGaOD0Vw" featurename="sharedElements" parentElementId="org.modelio.app.ui.trimmed">
+    <elements xsi:type="basic:Part" xmi:id="_fn78gLoQEeGR05fGaOD0Vw" elementId="org.modelio.edition.notes.notesview" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.view.NotesView" label="%Notes.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/description_note.png" tooltip="%Notes.tooltip" bindingContexts="_nBUaoVTsEeK4YallPPLLhg" closeable="true">
+      <handlers xmi:id="_VmFdYFTtEeK4YallPPLLhg" elementId="org.modelio.edition.notes.handler.remove" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.RemoveAnnotationHandler" command="_NXKUIFTtEeK4YallPPLLhg"/>
+      <handlers xmi:id="_M4XyQJbLEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handler.moveup" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.move.MoveAnnotationUpHandler" command="_6flUsJbYEeKDfYWV9SG7xw"/>
+      <handlers xmi:id="_NGg78JbLEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handler.movedown" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.move.MoveAnnotationDownHandler" command="_7Ji3sJbYEeKDfYWV9SG7xw"/>
+      <handlers xmi:id="_NUtI8JbLEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handler.cut" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.copy.CutAnnotationHandler" command="_5i5qAFTtEeK4YallPPLLhg"/>
+      <handlers xmi:id="_NlU-4JbLEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handler.copy" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.copy.CopyAnnotationHandler" command="_4_zkAFTtEeK4YallPPLLhg"/>
+      <handlers xmi:id="_NzhL4JbLEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handler.paste" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.copy.PasteAnnotationHandler" command="_5mVYgFTtEeK4YallPPLLhg"/>
+      <handlers xmi:id="_SGdfgJfCEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.handler.addnote" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.AddNoteHandler" command="_6QdTsJfBEeK_o970R-hZWQ"/>
+      <handlers xmi:id="_8mQZEJhTEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.handler.addconstraint" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.AddConstraintHandler" command="_kGk-IJhTEeK_o970R-hZWQ"/>
+      <handlers xmi:id="_6riRcJhWEeK_o970R-hZWQ" elementId="edition.notes.handler.0" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.CleanNoteHandler" command="_0j6L4JhWEeK_o970R-hZWQ"/>
+      <menus xmi:id="_owdEQBhXEeKEM_6azIZiZA" elementId="org.modelio.edition.notes.toolbar.menu">
+        <tags>ViewMenu</tags>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_owdEQRhXEeKEM_6azIZiZA" elementId="org.modelio.edition.notes.toolbar.sethorizontal" label="%SetHorizontal.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/Horizontal_Orientation.png" tooltip="%SetHorizontal.tooltip" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.SetNoteHzLayoutHandler"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_owdEQhhXEeKEM_6azIZiZA" elementId="org.modelio.edition.notes.toolbar.setvertical" label="%SetVertical.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/Vertical_Orientation.png" tooltip="%SetVertical.tooltip" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.SetNoteVtLayoutHandler"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_owdEQxhXEeKEM_6azIZiZA" elementId="org.modelio.edition.notes.toolbar.setauto" label="%SetAuto.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/Automatic_Orientation.png" tooltip="%SetAuto.tooltip" contributionURI="bundleclass://org.modelio.edition.notes/org.modelio.edition.notes.handlers.SetNoteAutoLayoutHandler"/>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_ukniEJbZEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.popupmenu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_qhkhYJbvEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handledmenuitem.remove" label="%RemoveAnnotation.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/remove_16.png" tooltip="%RemoveAnnotation.tooltip" command="_NXKUIFTtEeK4YallPPLLhg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_q6Nq4JbvEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handledmenuitem.cut" label="%CutAnnotation.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/cut_16.png" tooltip="%CutAnnotation.tooltip" command="_5i5qAFTtEeK4YallPPLLhg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_rNqyYJbvEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handledmenuitem.copy" label="%CopyAnnotation.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/copy_16.png" tooltip="%CopyAnnotation.tooltip" command="_4_zkAFTtEeK4YallPPLLhg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_rhV8UJbvEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.handledmenuitem.paste" label="%PasteAnnotation.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/paste_16.png" tooltip="%PasteAnnotation.tooltip" command="_5mVYgFTtEeK4YallPPLLhg"/>
+      </menus>
+      <toolbar xmi:id="_Ol3msBhXEeKEM_6azIZiZA" elementId="org.modelio.edition.notes.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ezZ0UJhTEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.toolbar.addconstraint" label="%AddConstraint.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/addConstraint_16.png" tooltip="%AddConstraint.tooltip" command="_kGk-IJhTEeK_o970R-hZWQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_XtmHIJfCEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.toolbar.addnote" label="%AddNote.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/addNote_16.png" tooltip="%AddNote.tooltip" command="_6QdTsJfBEeK_o970R-hZWQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_YY7jIJfCEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.toolbar.adddescription" label="%AddDescription.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/description.png" tooltip="%AddDescription.tooltip" command="_6QdTsJfBEeK_o970R-hZWQ">
+          <parameters xmi:id="_mR43AJfCEeK_o970R-hZWQ" elementId="noteType" name="noteType" value="description"/>
+        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_pf32sJhWEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.toolbar.addexterndocument" label="%AddExternDocument.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/addExternDocument_16.png" tooltip="%AddExternDocument.tooltip" enabled="false" command="_VGMn0JhWEeK_o970R-hZWQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_OisTIFTtEeK4YallPPLLhg" elementId="org.modelio.edition.notes.toolbar.removeannotation" label="%RemoveAnnotation.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/remove_16.png" tooltip="%RemoveAnnotation.tooltip" command="_NXKUIFTtEeK4YallPPLLhg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_p1xOMJhWEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.toolbar.cleannote" label="%CleanNote.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/cleanNote_16.png" tooltip="%CleanNote.tooltip" command="_0j6L4JhWEeK_o970R-hZWQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6GmXgJbZEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.toolbar.moveup" label="%MoveUp.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/moveup_16.png" tooltip="%MoveUp.tooltip" command="_6flUsJbYEeKDfYWV9SG7xw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6gAWAJbZEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.toolbar.movedown" label="%MoveDown.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/movedown_16.png" tooltip="%MoveDown.tooltip" command="_7Ji3sJbYEeKDfYWV9SG7xw"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_nBUaoFTsEeK4YallPPLLhg" featurename="children" parentElementId="org.eclipse.ui.contexts.window">
+    <elements xsi:type="commands:BindingContext" xmi:id="_nBUaoVTsEeK4YallPPLLhg" elementId="org.modelio.edition.notes.toolbar.bindings.context" name="%EditionNotes.context.name" description="%EditionNotes.context.description"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ngmXoFTsEeK4YallPPLLhg" featurename="bindingTables" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:BindingTable" xmi:id="_ngmXoVTsEeK4YallPPLLhg" elementId="org.modelio.edition.notes.bindings.table" bindingContext="_nBUaoVTsEeK4YallPPLLhg">
+      <bindings xmi:id="_Ck2oIFTtEeK4YallPPLLhg" keySequence="DEL" command="_NXKUIFTtEeK4YallPPLLhg"/>
+      <bindings xmi:id="_ngmXpFTsEeK4YallPPLLhg" keySequence="M1+C" command="_4_zkAFTtEeK4YallPPLLhg"/>
+      <bindings xmi:id="_ngmXpVTsEeK4YallPPLLhg" keySequence="M1+X" command="_5i5qAFTtEeK4YallPPLLhg"/>
+      <bindings xmi:id="_ngmXplTsEeK4YallPPLLhg" keySequence="M1+V" command="_5mVYgFTtEeK4YallPPLLhg"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_MNELkH9KEeK-XvSICEmsLA" featurename="children" parentElementId="org.modelio.app.ui.menu.views">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_OdMbIH9KEeK-XvSICEmsLA" elementId="org.modelio.edition.notes.menuitem.showview" label="%NotesShowView.label" iconURI="platform:/plugin/org.modelio.edition.notes/icons/description_note.png" tooltip="%NotesShowView.tooltip" command="_SxKxwH9KEeK-XvSICEmsLA">
+      <parameters xmi:id="_G4gFMH9LEeK-XvSICEmsLA" elementId="org.modelio.app.ui.command.showview.viewid" name="org.modelio.app.ui.command.showview.viewid" value="org.modelio.edition.notes.notesview"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ZzwqoJbLEeKDfYWV9SG7xw" featurename="commands" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Command" xmi:id="_6flUsJbYEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.command.moveup" commandName="%MoveUp.name" description="%MoveUp.description"/>
+    <elements xsi:type="commands:Command" xmi:id="_7Ji3sJbYEeKDfYWV9SG7xw" elementId="org.modelio.edition.notes.command.movedown" commandName="%MoveDown.name" description="%MoveDown.description"/>
+    <elements xsi:type="commands:Command" xmi:id="_6QdTsJfBEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.command.addnote" commandName="%AddNote.name" description="%AddNote.description">
+      <parameters xmi:id="_F0sy8JfCEeK_o970R-hZWQ" elementId="noteType" name="noteType"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_kGk-IJhTEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.command.addconstraint" commandName="%AddConstraint.name" description="%AddConstraint.description"/>
+    <elements xsi:type="commands:Command" xmi:id="_VGMn0JhWEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.command.addexterndocument" commandName="%AddExternDocument.name" description="%AddExternDocument.description"/>
+    <elements xsi:type="commands:Command" xmi:id="_0j6L4JhWEeK_o970R-hZWQ" elementId="org.modelio.edition.notes.command.cleannote" commandName="%CleanNote.name" description="%CleanNote.description"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Oa-2UN_OEeKdg8e0rQGLrw" featurename="children" parentElementId="org.modelio.app.bottom.parts">
+    <elements xsi:type="advanced:Placeholder" xmi:id="_Oa-2Ud_OEeKdg8e0rQGLrw" elementId="org.modelio.edition.notes.placeholder" ref="_fn78gLoQEeGR05fGaOD0Vw"/>
+  </fragments>
+</fragment:ModelFragments>

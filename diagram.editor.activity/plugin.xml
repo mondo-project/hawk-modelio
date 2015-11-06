@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<plugin>
+   <extension id="diagram.activity" point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="e4model/diagram_activity_editor.e4xmi">
+      </fragment>
+      <processor beforefragment="true" class="org.modelio.diagram.editor.activity.plugin.ActivityProcessor"/>
+   </extension>
+   
+   <extension point="org.modelio.diagram.editor.inputprovider">
+      <inputprovider class="org.modelio.diagram.editor.activity.editor.ActivityDiagramEditorInputProvider"/>
+   </extension>
+   
+	<extension point="org.modelio.diagram.editor.toolregistry">
+		<creationtool id="CREATE_ACCEPTCHANGEEVENTACTION" label="%AcceptChangeEventAction.label" tooltip="%AcceptChangeEventAction.tooltip" interactor="node">
+			<context metaclass="AcceptChangeEventAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_ACCEPTCALLEVENTACTION" label="%AcceptCallEventAction.label" tooltip="%AcceptCallEventAction.tooltip" interactor="node">
+			<context metaclass="AcceptCallEventAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_ACCEPTSIGNALACTION" label="%AcceptSignalAction.label" tooltip="%AcceptSignalAction.tooltip" interactor="node">
+			<context metaclass="AcceptSignalAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_ACCEPTTIMEEVENTACTION" label="%AcceptTimeEventAction.label" tooltip="%AcceptTimeEventAction.tooltip" interactor="point">
+			<context metaclass="AcceptTimeEventAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_ACTIVITYFINALNODE" label="%ActivityFinalNode.label" tooltip="%ActivityFinalNode.tooltip" interactor="point">
+			<context metaclass="ActivityFinalNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_ACTIVITYPARAMETERNODE" label="%ActivityParameterNode.label" tooltip="%ActivityParameterNode.tooltip" interactor="node">
+			<context metaclass="ActivityParameterNode" dependency="OwnedNode" >
+				<property name="complete" value="1"/>
+			</context>
+		</creationtool>
+        <creationtool id="CREATE_ACTIVITYPARTITION_VERTICAL_CONTAINER" label="%ActivityPartitionVerticalContainer.label" tooltip="%ActivityPartitionVerticalContainer.tooltip" interactor="point">
+			<context metaclass="ActivityPartition" dependency="OwnedGroup">
+			<property name="kind" value="VERTICAL_CONTAINER"/>
+			</context>
+		</creationtool>
+        <creationtool id="CREATE_ACTIVITYPARTITION_HORIZONTAL_CONTAINER" label="%ActivityPartitionHorizontalContainer.label" tooltip="%ActivityPartitionHorizontalContainer.tooltip" interactor="point" icon="icons/partition_horiz.png">
+            <context metaclass="ActivityPartition" dependency="OwnedGroup">
+            <property name="kind" value="HORIZONTAL_CONTAINER"/>
+            </context>
+        </creationtool>
+        <creationtool id="CREATE_ACTIVITYPARTITION_SIBLING" label="%ActivityPartitionSibling.label" tooltip="%ActivityPartitionSibling.tooltip" interactor="node" icon="icons/partition_sibling.png">
+            <context metaclass="ActivityPartition" dependency="OwnedGroup">
+            <property name="kind" value="SIBLING"/>
+            </context>
+        </creationtool>
+        <creationtool id="CREATE_ACTIVITYPARTITION_INNER" label="%ActivityPartitionInner.label" tooltip="%ActivityPartitionInner.tooltip" interactor="node" icon="icons/partition_sub.png">
+            <context metaclass="ActivityPartition" dependency="OwnedGroup">
+            <property name="kind" value="INNER"/>
+            </context>
+        </creationtool>
+        <creationtool id="CREATE_CALLBEHAVIORACTION" label="%CallBehaviorAction.label" tooltip="%CallBehaviorAction.tooltip" interactor="node">
+			<context metaclass="CallBehaviorAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_CALLOPERATIONACTION" label="%CallOperationAction.label" tooltip="%CallOperationAction.tooltip" interactor="node">
+			<context metaclass="CallOperationAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_CENTRALBUFFERNODE" label="%CentralBufferNode.label" tooltip="%CentralBufferNode.tooltip" interactor="node">
+			<context metaclass="CentralBufferNode" dependency="OwnedNode" >
+				<property name="complete" value="1"/>
+			</context>
+		</creationtool>
+		<creationtool id="CREATE_CLAUSE" label="%Clause.label" tooltip="%Clause.tooltip" interactor="node">
+			<context metaclass="Clause" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_CONDITIONALNODE" label="%ConditionalNode.label" tooltip="%ConditionalNode.tooltip" interactor="node">
+			<context metaclass="ConditionalNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_CONTROLFLOW" label="%ControlFlow.label" tooltip="%ControlFlow.tooltip" interactor="link">
+			<context metaclass="ControlFlow" dependency="null" router="CONTROLFLOW_ROUTINGMODE" />
+		</creationtool>
+		<creationtool id="CREATE_DATASTORENODE" label="%DataStoreNode.label" tooltip="%DataStoreNode.tooltip" interactor="node">
+			<context metaclass="DataStoreNode" dependency="OwnedNode" >
+				<property name="complete" value="1"/>
+			</context>
+		</creationtool>
+		<creationtool id="CREATE_DECISIONMERGENODE" label="%DecisionMergeNode.label" tooltip="%DecisionMergeNode.tooltip" interactor="point">
+			<context metaclass="DecisionMergeNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_EXCEPTIONHANDLER" label="%ExceptionHandler.label" tooltip="%ExceptionHandler.tooltip" interactor="link">
+			<context dependency="null" metaclass="ExceptionHandler" router="EXCEPTIONHANDLER_ROUTINGMODE" />
+		</creationtool>
+		<creationtool id="CREATE_EXPANSIONNODE_INPUT" label="%ExpansionNodeInput.label" tooltip="%ExpansionNodeInput.tooltip" interactor="point">
+			<context metaclass="ExpansionNode" dependency="InputElement" />
+		</creationtool>
+		<creationtool id="CREATE_EXPANSIONNODE_OUTPUT" label="%ExpansionNodeOutput.label" tooltip="%ExpansionNodeOutput.tooltip" interactor="point" icon="icons/expansionnodeoutput.png">
+			<context metaclass="ExpansionNode" dependency="OutputElement" />
+		</creationtool>
+		<creationtool id="CREATE_EXPANSIONREGION" label="%ExpansionRegion.label" tooltip="%ExpansionRegion.tooltip" interactor="node">
+			<context metaclass="ExpansionRegion" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_FLOWFINALNODE" label="%FlowFinalNode.label" tooltip="%FlowFinalNode.tooltip" interactor="point">
+			<context metaclass="FlowFinalNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_FORKJOINNODE" label="%ForkJoinNode.label" tooltip="%ForkJoinNode.tooltip" interactor="point">
+			<context metaclass="ForkJoinNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_INITIALNODE" label="%InitialNode.label" tooltip="%InitialNode.tooltip" interactor="point">
+			<context metaclass="InitialNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_INPUTPIN" label="%InputPin.label" tooltip="%InputPin.tooltip" interactor="point">
+			<context metaclass="InputPin" dependency="Input" />
+		</creationtool>
+		<creationtool id="CREATE_INSTANCENODE" label="%InstanceNode.label" tooltip="%InstanceNode.tooltip" interactor="node">
+			<context metaclass="InstanceNode" dependency="OwnedNode" >
+				<property name="complete" value="1"/>
+			</context>
+		</creationtool>
+		<creationtool id="CREATE_INTERRUPTIBLEACTIVITYREGION" label="%InterruptibleActivityRegion.label" tooltip="%InterruptibleActivityRegion.tooltip" interactor="node">
+			<context metaclass="InterruptibleActivityRegion" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_LOOPNODE" label="%LoopNode.label" tooltip="%LoopNode.tooltip" interactor="node">
+			<context metaclass="LoopNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_OBJECTFLOW" label="%ObjectFlow.label" tooltip="%ObjectFlow.tooltip" interactor="link">
+			<context metaclass="ObjectFlow" dependency="null" router="OBJECTFLOW_ROUTINGMODE" />
+		</creationtool>
+		<creationtool
+        icon="icons/activityedge.png"
+        id="CREATE_SMARTFLOW"
+        interactor="link"
+        label="%SmartFlow.label"
+        tooltip="%SmartFlow.tooltip">
+			<context metaclass="ObjectFlow" dependency="null" router="OBJECTFLOW_ROUTINGMODE">
+				<property name="smart" value="true" /> 
+			</context>
+		</creationtool>
+		<creationtool id="CREATE_OPAQUEACTION" label="%OpaqueAction.label" tooltip="%OpaqueAction.tooltip" interactor="node">
+			<context metaclass="OpaqueAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_OUTPUTPIN" label="%OutputPin.label" tooltip="%OutputPin.tooltip" interactor="point">
+			<context metaclass="OutputPin" dependency="Output" />
+		</creationtool>
+		<creationtool id="CREATE_SENDSIGNALACTION" label="%SendSignalAction.label" tooltip="%SendSignalAction.tooltip" interactor="node">
+			<context metaclass="SendSignalAction" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_STRUCTUREDNODE" label="%StructuredNode.label" tooltip="%StructuredNode.tooltip" interactor="node">
+			<context metaclass="StructuredActivityNode" dependency="OwnedNode" />
+		</creationtool>
+		<creationtool id="CREATE_VALUEPIN" label="%ValuePin.label" tooltip="%ValuePin.tooltip" interactor="point">
+			<context metaclass="ValuePin" dependency="Input" />
+		</creationtool>
+	</extension>
+</plugin>

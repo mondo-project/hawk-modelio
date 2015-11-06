@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<create-popups>
+	<!-- Popup for AcceptCallEventAction -->
+  <popup metaclass="AcceptCallEventAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for AcceptChangeEventAction -->
+  <popup metaclass="AcceptChangeEventAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for AcceptSignalAction -->
+  <popup metaclass="AcceptSignalAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for AcceptTimeEventAction -->
+  <popup metaclass="AcceptTimeEventAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for ActivityPartition -->
+  <popup metaclass="ActivityPartition">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptCallEventAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptChangeEventAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptSignalAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptTimeEventAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="SendSignalAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkJoinNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DecisionMergeNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityFinalNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FlowFinalNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityParameterNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallBehaviorAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallOperationAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OpaqueAction"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InstanceNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CentralBufferNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DataStoreNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ConditionalNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="LoopNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="StructuredActivityNode"/>
+      <parameter name="dependency" value="ContainedNode"/>
+    </command>
+  </popup>
+  <!-- Popup for CallBehaviorAction -->
+  <popup metaclass="CallBehaviorAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InputPin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ValuePin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for CallOperationAction -->
+  <popup metaclass="CallOperationAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InputPin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ValuePin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for Clause -->
+  <popup metaclass="Clause">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptCallEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptChangeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptTimeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="SendSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkJoinNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DecisionMergeNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FlowFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityParameterNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallBehaviorAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallOperationAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OpaqueAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InstanceNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CentralBufferNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DataStoreNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ConditionalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="LoopNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="StructuredActivityNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+  </popup>
+  <!-- Popup for ConditionalNode -->
+  <popup metaclass="ConditionalNode">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="Clause"/>
+      <parameter name="dependency" value="OwnedClause"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InputPin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ValuePin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for LoopNode -->
+  <popup metaclass="LoopNode">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptCallEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptChangeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptTimeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="SendSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkJoinNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DecisionMergeNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FlowFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityParameterNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallBehaviorAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallOperationAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OpaqueAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InstanceNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CentralBufferNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DataStoreNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="LoopNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ConditionalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="StructuredActivityNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InputPin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ValuePin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for OpaqueAction -->
+  <popup metaclass="OpaqueAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InputPin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ValuePin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for SendSignalAction -->
+  <popup metaclass="SendSignalAction">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InputPin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ValuePin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for StructuredActivityNode -->
+  <popup metaclass="StructuredActivityNode">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptCallEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptChangeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptTimeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="SendSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkJoinNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DecisionMergeNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FlowFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallBehaviorAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallOperationAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OpaqueAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InstanceNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CentralBufferNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DataStoreNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ConditionalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="LoopNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="StructuredActivityNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InputPin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ValuePin"/>
+      <parameter name="dependency" value="Input"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OutputPin"/>
+      <parameter name="dependency" value="Output"/>
+    </command>
+  </popup>
+  <!-- Popup for Activity -->
+  <popup metaclass="Activity">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InterruptibleActivityRegion"/>
+      <parameter name="dependency" value="OwnedGroup"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptCallEventAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptChangeEventAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptSignalAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptTimeEventAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="SendSignalAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityFinalNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FlowFinalNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkJoinNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DecisionMergeNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityParameterNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="BehaviorParameter"/>
+      <parameter name="dependency" value="Parameter"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallOperationAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallBehaviorAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OpaqueAction"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InstanceNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CentralBufferNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DataStoreNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ConditionalNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="LoopNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="StructuredActivityNode"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ExpansionRegion"/>
+      <parameter name="dependency" value="OwnedNode"/>
+    </command>
+  </popup>
+  <!-- Popup for ExpansionRegion -->
+  <popup metaclass="ExpansionRegion">
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptCallEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptChangeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="AcceptTimeEventAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="SendSignalAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkJoinNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DecisionMergeNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FlowFinalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ActivityParameterNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallBehaviorAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CallOperationAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="OpaqueAction"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InstanceNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="CentralBufferNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DataStoreNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <separator/>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ConditionalNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="LoopNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="StructuredActivityNode"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ExpansionRegion"/>
+      <parameter name="dependency" value="Body"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ExpansionNode"/>
+      <parameter name="dependency" value="InputElement"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ExpansionNode"/>
+      <parameter name="dependency" value="OutputElement"/>
+    </command>
+  </popup>
+</create-popups>
+
+
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_YQKi0EN6EeK0D9nRHZj9jw">
+  <imports xsi:type="menu:ToolBar" xmi:id="_RtGhUKj6EeKKC9R6FKgnOw" elementId="org.modelio.app.toolbar.main"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_aJdfEKj5EeKKC9R6FKgnOw" featurename="commands" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Command" xmi:id="_cIdiYKj5EeKKC9R6FKgnOw" elementId="org.modelio.diagram.creation.wizard.command.creation" commandName="%CommandCreation.name" description="%CommandCreation.description">
+      <parameters xmi:id="_vUj8sN8kEeK30OdmOG-hcQ" elementId="contributor" name="contributor"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ab558Kj5EeKKC9R6FKgnOw" featurename="handlers" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Handler" xmi:id="_r2loIKj5EeKKC9R6FKgnOw" elementId="org.modelio.diagram.creation.wizard.handler.creation" contributionURI="bundleclass://org.modelio.diagram.creation.wizard/org.modelio.diagram.creation.wizard.handler.DiagramCreationHandler" command="_cIdiYKj5EeKKC9R6FKgnOw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_PZQ2cKj6EeKKC9R6FKgnOw" featurename="children" parentElementId="org.modelio.app.toolbar.main">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_PZQ2kKj6EeKKC9R6FKgnOw" elementId="org.modelio.diagram.creation.wizard.openwizard" label="%OpenWizard.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/diagramwizard.png" tooltip="%OpenWizard.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw"/>
+    <elements xsi:type="menu:ToolBarSeparator" xmi:id="_K3nLEL5BEeKa_Z5OvMh8Mw" elementId="diagram.creation.wizard.toolbarseparator.0"/>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_zuhxIN8lEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.activity" label="%CreateActivityDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/activitydiagram.png" tooltip="%CreateActivityDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_zuhxId8lEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="ActivityDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_iNN94N8iEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.bpmnprocesscollaboration" label="%CreateBpmnProcessCollaborationDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/bpmnprocesscollaborationdiagram.png" tooltip="%CreateBpmnProcessCollaborationDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_tPWOkN8iEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="BpmnProcessCollaborationDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_RTubwN8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.class" label="%CreateClassDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/classdiagram.png" tooltip="%CreateClassDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_RTubwd8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="ClassDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_aFyuUN8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.communication" label="%CreateCommunicationDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/communicationdiagram.png" tooltip="%CreateCommunicationDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_aFyuUd8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="CommunicationDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_d1It4N8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.composite" label="%CreateCompositeDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/compositestructurediagram.png" tooltip="%CreateCompositeDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_d1It4d8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="CompositeDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_g3d2cN8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.deployment" label="%CreateDeploymentDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/deploymentdiagram.png" tooltip="%CreateDeploymentDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_g3d2cd8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="DeploymentDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_mNWWAN8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.object" label="%CreateObjectDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/objectdiagram.png" tooltip="%CreateObjectDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_mNWWAd8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="ObjectDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_pSkagN8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.sequence" label="%CreateSequenceDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/sequencediagram.png" tooltip="%CreateSequenceDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_pSkagd8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="SequenceDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_tJjTIN8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.state" label="%CreateStateDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/statediagram.png" tooltip="%CreateStateDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_tJjTId8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="StateDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_wVMIsN8jEeK30OdmOG-hcQ" elementId="org.modelio.diagram.creation.usecase" label="%CreateUseCaseDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/usecasediagram.png" tooltip="%CreateUseCaseDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+      <parameters xmi:id="_wVMIsd8jEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="UseCaseDiagramCreationContributor"/>
+    </elements>
+    <elements xsi:type="menu:ToolBarSeparator" xmi:id="_AcUu4N8lEeK30OdmOG-hcQ" elementId="diagram.creation.wizard.toolbarseparator.1"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_9NYWoN50EeKc3c7jOQLKkA" featurename="children" parentElementId="model.browser.popupmenu.0" positionInList="before:org.modelio.model.browser.menu.createelement">
+    <elements xsi:type="menu:Menu" xmi:id="_kbgEQN8rEeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram" label="%CreateDiagramMenu.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/creatediagram.png" tooltip="%CreateDiagram.tooltip">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_dBfIwN82EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.class" label="%CreateClassDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/classdiagram.png" tooltip="%CreateClassDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_f-sEAN_WEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.classdiagram.id"/>
+        <parameters xmi:id="_dBfIwd82EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="ClassDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_dSpxQN82EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.deployment" label="%CreateDeploymentDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/deploymentdiagram.png" tooltip="%CreateDeploymentDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_EQqQAN_REeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.deploymentdiagram.id"/>
+        <parameters xmi:id="_dSpxQd82EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="DeploymentDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_BYG1IN86EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.object" label="%CreateObjectDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/objectdiagram.png" tooltip="%CreateObjectDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_sXgqwN_qEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.objectdiagram.id"/>
+        <parameters xmi:id="_BYG1Id86EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="ObjectDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_BldUoN86EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.usecase" label="%CreateUseCaseDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/usecasediagram.png" tooltip="%CreateUseCaseDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_uzsj4N_rEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.usecasdiagram.id"/>
+        <parameters xmi:id="_BldUod86EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="UseCaseDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Bc6coN86EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.sequence" label="%CreateSequenceDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/sequencediagram.png" tooltip="%CreateSequenceDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_xoY5EN_rEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.sequencediagram.id"/>
+        <parameters xmi:id="_Bc6cod86EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="SequenceDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_BhVpoN86EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.state" label="%CreateStateDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/statediagram.png" tooltip="%CreateStateDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_ztEtoN_rEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.statediagram.id"/>
+        <parameters xmi:id="_BhVpod86EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="StateDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_tF_vMN8rEeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.activity" label="%CreateActivityDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/activitydiagram.png" tooltip="%CreateActivityDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_2-SmwN_rEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.activitydiagram.id"/>
+        <parameters xmi:id="_0EGJwN8rEeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="ActivityDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_dFh7QN82EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.communication" label="%CreateCommunicationDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/communicationdiagram.png" tooltip="%CreateCommunicationDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_5sJ7MN_rEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.communicationdiagram.id"/>
+        <parameters xmi:id="_dFh7Qd82EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="CommunicationDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_dQl7wN82EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.composite" label="%CreateCompositeDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/compositestructurediagram.png" tooltip="%CreateCompositeDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_7xDyMN_rEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.compositediagram.id"/>
+        <parameters xmi:id="_dQl7wd82EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="CompositeDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_c3kXwN82EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.bpmnprocesscollaboration" label="%CreateBpmnProcessCollaborationDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/bpmnprocesscollaborationdiagram.png" tooltip="%CreateBpmnProcessCollaborationDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_CZgs4N_sEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.bpmnprocesscollaborationdiagram.id"/>
+        <parameters xmi:id="_c3kXwd82EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="BpmnProcessCollaborationDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_fhayEN86EeK30OdmOG-hcQ" elementId="org.modelio.diagram.popup.creatediagram.bpmnsubprocesscollaboration" label="%CreateBpmnSubProcessDiagram.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/bpmnsubprocessdiagram.png" tooltip="%CreateBpmnSubProcessDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_E7orYN_sEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.bpmnsubprocessdiagram.id"/>
+        <parameters xmi:id="_fhayEd86EeK30OdmOG-hcQ" elementId="contributor" name="contributor" value="BpmnSubProcessDiagramCreationContributor"/>
+      </children>
+      <children xsi:type="menu:MenuSeparator" xmi:id="_MQo_gN_rEeKSHs7mw61SPw" elementId="diagram.creation.wizard.menuseparator.0"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_9NYWpN50EeKc3c7jOQLKkA" elementId="org.modelio.diagram.popup.creation.wizard.openwizard" label="%CreateDiagramItem.label" iconURI="platform:/plugin/org.modelio.diagram.creation.wizard/icons/diagramwizard.png" tooltip="%CreateDiagram.tooltip" command="_cIdiYKj5EeKKC9R6FKgnOw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_zpvzMN_zEeKSHs7mw61SPw" coreExpressionId="diagram.creation.wizard.test.opendiagramwizard.id"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

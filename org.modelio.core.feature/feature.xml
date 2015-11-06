@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.modelio.core.feature"
+      label="Core"
+      version="3.2.1.qualifier"
+      provider-name="Modelio">
+
+   <copyright>
+      Copyright 2014 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </copyright>
+
+   <license url="">
+      Copyright 2014 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </license>
+
+   <url>
+      <discovery label="Modelio" url="http://www.modelio.org"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.emf.common"/>
+   </requires>
+
+   <plugin
+         id="org.modelio.core.kernel"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.project"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.session"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.store.exml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.utils"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jdbm"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="practicalxml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.metamodel.emfapi"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.metamodel.implementation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.modelio.core.project.data"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

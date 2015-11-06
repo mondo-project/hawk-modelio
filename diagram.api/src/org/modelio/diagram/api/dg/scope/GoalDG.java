@@ -1,0 +1,52 @@
+/*
+ * Copyright 2013 Modeliosoft
+ *
+ * This file is part of Modelio.
+ *
+ * Modelio is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Modelio is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Modelio.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ */  
+                                    
+
+package org.modelio.diagram.api.dg.scope;
+
+import java.util.Collections;
+import java.util.List;
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+import org.modelio.api.diagram.IDiagramNode;
+import org.modelio.diagram.api.dg.common.PortContainerDG;
+import org.modelio.diagram.api.services.DiagramHandle;
+import org.modelio.diagram.elements.core.node.GmNodeModel;
+
+/**
+ * This class represents the DiagramGraphic of a 'Goal' element.
+ */
+@objid ("2484237d-0ea7-45aa-9153-484f51e3895a")
+public class GoalDG extends PortContainerDG {
+    /**
+     * @param diagramHandle The diagram manipulation class.
+     * @param node The gm node represented by this class.
+     */
+    @objid ("24b3ae53-3378-4f6a-8493-d9c09f351d87")
+    public GoalDG(DiagramHandle diagramHandle, GmNodeModel node) {
+        super(diagramHandle, node);
+    }
+
+    @objid ("c00e5ae6-6050-499b-b59d-6f79dfea40bc")
+    @Override
+    public List<IDiagramNode> getPrimaryChildrenNodes() {
+        return Collections.emptyList();
+    }
+
+}

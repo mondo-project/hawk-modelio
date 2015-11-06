@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.modelio.diagram.editor.toolregistry" name="toolregistry" schema="schema/org.modelio.diagram.editor.toolregistry.exsd"/>
+   <extension-point id="org.modelio.diagram.editor.inputprovider" name="inputprovider" schema="schema/org.modelio.diagram.editor.inputprovider.exsd"/>
+   
+   <extension id="id1" point="org.eclipse.e4.workbench.model">
+      <processor beforefragment="true" class="org.modelio.diagram.editor.plugin.DiagramEditorsManager"/>
+      <processor beforefragment="true" class="org.modelio.diagram.editor.context.ModuleMenuCreator"/>
+   </extension>
+	
+   <extension point="org.modelio.diagram.editor.toolregistry">
+      <creationtool id="CREATE_CONSTRAINT" label="%Constraint.label" tooltip="%Constraint.tooltip" interactor="multipoint">
+         <context metaclass="Constraint" dependency="ConstraintDefinition" />
+      </creationtool>
+   </extension>
+
+<extension point="org.eclipse.e4.workbench.model"  id="modelContribution">
+      <fragment uri="e4model/diagram.editor.e4xmi"></fragment>
+</extension>
+
+<extension point="org.eclipse.core.expressions.definitions">
+		<definition id="org.modelio.diagram.editor.corexp.is-gmlink.id">
+			<test property="org.modelio.diagram.editor.corexp.is-gmlink"/>
+		</definition>
+		<definition id="org.modelio.diagram.editor.corexp.is-gmnode.id">
+        	<test property="org.modelio.diagram.editor.corexp.is-gmnode"/>
+		</definition>
+		<definition id="org.modelio.diagram.editor.corexp.is-gmnsu.id">
+        	<test property="org.modelio.diagram.editor.corexp.is-gmnsu"/>
+		</definition>
+		<definition id="org.modelio.diagram.editor.corexp.is-gmnodedrawing.id">
+     <with
+           variable="org.eclipse.ui.selection">
+        <iterate
+              ifEmpty="false"
+              operator="or">
+           <adapt
+                 type="org.modelio.diagram.elements.drawings.core.IGmDrawing">
+           </adapt>
+        </iterate>
+     </with>
+		</definition>
+  <definition
+        id="org.modelio.diagram.editor.corexp.has-gmmodel.id">
+     <with
+           variable="org.eclipse.ui.selection">
+        <iterate
+              ifEmpty="false"
+              operator="or">
+           <adapt
+                 type="org.modelio.diagram.elements.core.model.GmModel">
+           </adapt>
+        </iterate>
+     </with>
+  </definition>
+</extension>
+  
+<extension point="org.eclipse.core.expressions.propertyTesters">
+		<propertyTester
+			class="org.modelio.diagram.editor.corexp.GmTester"
+			id="org.modelio.diagram.editor.corexp.GmTester.id"
+			namespace="org.modelio.diagram.editor.corexp"
+			properties="is-gmlink, is-gmnode, is-gmnsu"
+			type="org.eclipse.jface.viewers.ISelection">
+		</propertyTester>
+</extension>
+
+
+</plugin>

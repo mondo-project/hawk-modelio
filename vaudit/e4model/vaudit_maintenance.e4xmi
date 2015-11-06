@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_uw0ioEVPEeOC2M239lCXHw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_vbWtYEVPEeOC2M239lCXHw" featurename="menuContributions" parentElementId="org.modelio.app.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_7CnrcEVPEeOC2M239lCXHw" elementId="vaudit.menucontribution.0" parentId="org.modelio.admtool.menu">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_m_GdUEVQEeOC2M239lCXHw" elementId="vaudit.handledmenuitem.rebuildnsuses" label="%RebuildNsUses.label" tooltip="%RebuildNsUses.tooltip" command="_Hc-6YEVQEeOC2M239lCXHw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_sEx9sEVQEeOC2M239lCXHw" coreExpressionId="app.project.ui.expression.isProjectFragment"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_bHUPoEVTEeOC2M239lCXHw" elementId="vaudit.handledmenuitem.rebuildnsuses" label="%DefragLocalModel.label" tooltip="%DefragLocalModel.tooltip" command="_T03VsEVTEeOC2M239lCXHw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_L8dnUEVZEeOC2M239lCXHw" coreExpressionId="app.project.ui.expression.isProjectFragment"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DxNzQEVQEeOC2M239lCXHw" featurename="commands" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Command" xmi:id="_Hc-6YEVQEeOC2M239lCXHw" elementId="vaudit.command.rebuild_nsuses" commandName="Rebuild namespace uses" description="Rebuild namespace uses links"/>
+    <elements xsi:type="commands:Command" xmi:id="_T03VsEVTEeOC2M239lCXHw" elementId="vaudit.command.defrag_local_model" commandName="Defragment local model" description="Defragment the local model to recover unused disk space"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Na97wEVQEeOC2M239lCXHw" featurename="handlers" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Handler" xmi:id="_TKax4EVQEeOC2M239lCXHw" elementId="vaudit.handler.rebuildnsuses" contributionURI="bundleclass://org.modelio.vaudit/org.modelio.vaudit.handlers.RebuildNsUsesHandler" command="_Hc-6YEVQEeOC2M239lCXHw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_SqM5YEVTEeOC2M239lCXHw" elementId="vaudit.handler.defrag_local_model" contributionURI="bundleclass://org.modelio.vaudit/org.modelio.vaudit.handlers.DefragLocalModelHandler" command="_T03VsEVTEeOC2M239lCXHw"/>
+  </fragments>
+</fragment:ModelFragments>

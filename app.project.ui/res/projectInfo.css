@@ -1,0 +1,103 @@
+html {margin: 0;padding:0;}
+* {
+padding: 0;
+margin: 0;
+}
+body {
+margin: 0; padding: 0;
+background: url(./img/body-bg.jpg) 0 0 repeat-x}
+h1 {border-bottom: 1px solid #000; margin-bottom: 10px}
+
+#wrapper {background: url(./img/header.jpg) 0 0 no-repeat; margin: 0; padding: 40px 20px; min-width:650px;}
+.horizontal-content {overflow: hidden; margin-bottom: 15px}
+#project-description {padding:5px; float: left; width: 48%; text-align: justify; max-height:140px; overflow:auto;}
+#project-description p {white-space: pre-wrap;}
+#project-infos {/*float: left;*/ margin-left : 50%; height:90px;}
+.projectDescription {font-style: italic; color: #333}
+.AccordionTitle, .AccordionContent, .AccordionContainer
+{
+  position:relative;
+}
+
+.AccordionTitle
+{
+  height:20px;
+  overflow:hidden;
+  cursor:pointer;
+  font-size:0.9em;
+  font-weight:bold;
+  vertical-align:middle;
+  text-align:left;
+  background-repeat:repeat-x;
+  display:table-cell;
+  -moz-user-select:none;
+}
+
+.AccordionContent
+{
+  clear: both;
+  overflow:auto;
+  background: #f0f0f0;
+  height: 150px;
+  margin-bottom:10px;
+}
+
+.AccordionContainer
+{
+  margin-bottom: 15px;
+  border-top: solid 1px #C1C1C1;
+  border-bottom: solid 1px #C1C1C1;
+  border-left: solid 2px #C1C1C1;
+  border-right: solid 2px #C1C1C1;  
+}
+
+#top-container {overflow: hidden; min-width: 820px}
+#AccordionContainerGeneral {float: left; width: 49%; min-width: 400px}
+#AccordionContainerStorage {float: right; width: 49%; min-width: 400px}
+
+ 
+.emailInput[readonly]{background-color:#F0F0F0 !important;color: #0000FF !important; border: none; width:100%;}
+#mailcontainer {position: relative; padding-right: 22px}
+span.sendMail {background: url(./img/mail.png) 0 0 no-repeat; width: 16px; height: 16px; display: block; cursor: pointer;position: absolute; right: 0; top: 0}
+
+.readonlyInput[readonly]{background-color:#F0F0F0 !important; color:#303030 !important; border: 1px solid #ccc;width:100%;}
+ 
+.box-infos {background: #f0f0f0; border: 1px solid #ccc;padding: 5px 10px; min-width: 300px}
+.box-infos table {table-layout: fixed; border-collapse: collapse; width: 100%; min-width: 300px}
+.box-infos table label {font-weight: bold;}
+.box-infos table input {padding: 2px 0px}
+/*input[readonly]{background-color:#F0F0F0 !important; color:#303030 !important; border: 1px solid #ccc}*/
+.box-infos table td {padding-bottom: 7px; padding-right: 4px;}
+.box-infos table td input.readonlyInput {width: 98%;}
+
+.box-infos table td p{overflow: hidden; min-width: 150px}
+.box-infos table tr td:first-child { width: 120px}
+
+.AccordionContainer {
+	/*background: #fde6e6 url(./img/box-bg.png) 0 0 repeat-x; border: 1px solid #ad0000;*//* red */
+	background: #eaeaea url(./img/box-bg-grey.png) 0 0 repeat-x; border: 1px solid #ccc;/* grey */
+}
+.AccordionContainer > div {padding: 5px 10px;}
+
+
+.AccordionContent table {width: 100%; border-collapse: collapse; }
+.AccordionContent table tr td:first-child { width: 250px; }
+.AccordionContent table#workModelsTbl tr td:first-child + td,.AccordionContent table#librariesTbl tr td:first-child + td
+ {width: 100px; text-align: center}
+.librarieDescriptorTextarea{width:100%; height:100%;
+	font-family: inherit;
+   	font-size: inherit;
+ 	border-style: none; 
+    border-color: Transparent; 
+    overflow: auto; 
+    resize: none;}
+
+.AccordionContent table {border: 1px solid #ccc;}
+.AccordionContent td {background: #fff;}
+.AccordionContent th {font-size: 1.0em}
+.AccordionContent td, .AccordionContent th {padding: 2px 6px;border: 1px solid #ccc; text-align: left}
+
+.AccordionContainer .AccordionTitle {color: #ad0000; font-size: 1.1em; }
+.AccordionContainer .AccordionHeader {border-bottom: 1px solid #ccc}
+.acc-closed {padding-left: 16px; background: url(./img/acc-closed.png) 0 center no-repeat; line-height: 20px;}
+.acc-opened {padding-left: 16px; background: url(./img/acc-opened.png) 0 center no-repeat; line-height: 20px;}

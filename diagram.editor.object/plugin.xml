@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension id="diagram.object" point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="e4model/diagram_object_editor.e4xmi">
+      </fragment>
+      <processor beforefragment="true" class="org.modelio.diagram.editor.object.plugin.ObjectProcessor"/>
+   </extension>
+   
+   <extension point="org.modelio.diagram.editor.inputprovider">
+      <inputprovider class="org.modelio.diagram.editor.object.editor.ObjectDiagramEditorInputProvider"/>
+   </extension>
+</plugin>

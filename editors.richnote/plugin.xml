@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension id="id1" point="org.eclipse.e4.workbench.model">
+      <fragment uri="e4model/richnotes.e4xmi">
+      </fragment>
+      <processor beforefragment="true" class="org.modelio.editors.richnote.management.RichNoteEditorsManager"/>
+      <processor beforefragment="true" class="org.modelio.editors.richnote.management.ExternEditorsManager"/>
+   </extension>
+   
+   <extension-point id="org.modelio.documentformatprovider" 
+                    name="Rich note format provider" 
+                    schema="schema/org.modelio.documentformatprovider.exsd"/>
+   
+</plugin>	

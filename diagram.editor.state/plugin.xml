@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension id="diagram.state" point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="e4model/diagram_state_editor.e4xmi">
+      </fragment>
+      <processor beforefragment="true" class="org.modelio.diagram.editor.state.plugin.StateProcessor"/>
+   </extension>
+   
+   <extension point="org.modelio.diagram.editor.inputprovider">
+      <inputprovider class="org.modelio.diagram.editor.state.editor.StateDiagramEditorInputProvider"/>
+   </extension>
+   
+   <extension
+         point="org.modelio.diagram.editor.toolregistry"> 
+<creationtool id="CREATE_STATE" label="%State.label" tooltip="%State.tooltip" interactor="node">
+     <context metaclass="State" dependency="Sub"/>
+</creationtool>
+<creationtool id="CREATE_REGION" label="%Region.label" tooltip="%Region.tooltip" interactor="node">         
+         <context metaclass="Region" dependency="Sub"/>               
+      </creationtool>
+<creationtool id="CREATE_INTERNALTRANSITION" interactor="point" label="%InternalTransition.label" tooltip="%InternalTransition.tooltip">
+         <context dependency="Sub" metaclass="InternalTransition"/>
+      </creationtool>
+<creationtool id="CREATE_TRANSITION" label="%Transition.label" tooltip="%Transition.tooltip" interactor="link">
+	<context metaclass="Transition" dependency="null" router="TRANSITION_ROUTINGMODE"/>
+</creationtool>
+<creationtool id="CREATE_FORKPSEUDOSTATE" interactor="point" label="%ForkPseudoState.label" tooltip="%ForkPseudoState.tooltip">
+         <context dependency="Sub" metaclass="ForkPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_CHOICEPSEUDOSTATE" interactor="point" label="%ChoicePseudoState.label" tooltip="%ChoicePseudoState.tooltip">
+         <context dependency="Sub" metaclass="ChoicePseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_DEEPHISTORYPSEUDOSTATE" interactor="point" label="%DeepHistoryPseudoState.label" tooltip="%DeepHistoryPseudoState.tooltip">
+         <context dependency="Sub" metaclass="DeepHistoryPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_ENTRYPOINTPSEUDOSTATE" interactor="point" label="%EntryPointPseudoState.label" tooltip="%EntryPointPseudoState.tooltip">
+         <context dependency="EntryPoint"  metaclass="EntryPointPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_EXITPOINTPSEUDOSTATE" interactor="point" label="%ExitPointPseudoState.label" tooltip="%ExitPointPseudoState.tooltip">
+         <context dependency="ExitPoint" metaclass="ExitPointPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_INITIALPSEUDOSTATE" interactor="point" label="%InitialPseudoState.label" tooltip="%InitialPseudoState.tooltip">
+         <context dependency="Sub" metaclass="InitialPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_JOINPSEUDOSTATE" interactor="point" label="%JoinPseudoState.label" tooltip="%JoinPseudoState.tooltip">
+         <context dependency="Sub" metaclass="JoinPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_JUNCTIONPSEUDOSTATE" interactor="point" label="%JunctionPseudoState.label" tooltip="%JunctionPseudoState.tooltip">
+         <context dependency="Sub" metaclass="JunctionPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_SHALLOWHISTORYPSEUDOSTATE" interactor="point" label="%ShallowHistoryPseudoState.label" tooltip="%ShallowHistoryPseudoState.tooltip">
+         <context dependency="Sub" metaclass="ShallowHistoryPseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_TERMINATEPSEUDOSTATE" interactor="point" label="%TerminatePseudoState.label" tooltip="%TerminatePseudoState.tooltip">
+         <context dependency="Sub"  metaclass="TerminatePseudoState"/>
+      </creationtool>
+<creationtool id="CREATE_FINALSTATE" interactor="point" label="%FinalState.label" tooltip="%FinalState.tooltip">
+         <context dependency="Sub" metaclass="FinalState"/>
+      </creationtool>
+<creationtool id="CREATE_CONNECTIONPOINTREFERENCE" interactor="point" label="%ConnectionPointReference.label" tooltip="%ConnectionPointReference.tooltip">
+         <context dependency="Sub" metaclass="ConnectionPointReference"/>
+      </creationtool>
+   </extension>
+
+<!--<extension point="org.eclipse.ui.bindings">-->
+<!--********************************************-->
+<!-- Key bindings for direct creation shortcuts -->
+<!--********************************************-->
+<!-- TODO shortcuts
+<key sequence  = "M1+N M1+C"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="ChoicePseudoState" />
+</key>
+<key sequence  = "M1+N M1+E"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="EntryPointPseudoState" />
+</key>
+<key sequence  = "M1+N M1+F"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="FinalState" />
+</key>
+<key sequence  = "M1+N M1+H"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="ShallowHistoryPseudoState" />
+</key>
+<key sequence  = "M1+N M1+M2+H"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="DeepHistoryPseudoState" />
+</key>
+<key sequence  = "M1+N M1+I"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="InitialPseudoState" />
+</key>
+<key sequence  = "M1+N M1+J"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="JoinPseudoState" />
+</key>
+<key sequence  = "M1+N M1+S"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="State" />
+</key>
+<key sequence  = "M1+N M1+T"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="TerminatePseudoState" />
+</key>
+<key sequence  = "M1+N M1+X"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="ExitPointPseudoState" />
+</key>
+<key sequence  = "M1+N M1+Y"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.CreateElementCommand">
+     <parameter id="metaclass"  value="ForkPseudoState" />
+</key>-->
+		
+<!--********************************************-->		
+<!-- Key bindings for tool shortcuts            -->		
+<!--********************************************-->
+<!--<key sequence  = "SPACE"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId" value="CREATE_TRANSITION">
+   </parameter>
+</key>
+<key sequence  = "C"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_CHOICEPSEUDOSTATE" />
+</key>
+<key sequence  = "E"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_ENTRYPOINTPSEUDOSTATE" />
+</key>
+<key sequence  = "F"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_FINALSTATE" />
+</key>
+<key sequence  = "H"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_SHALLOWHISTORYPSEUDOSTATE" />
+</key>
+<key sequence  = "M2+H"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_DEEPHISTORYPSEUDOSTATE" />
+</key>
+<key sequence  = "I"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_INITIALPSEUDOSTATE" />
+</key>
+<key sequence  = "J"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_JOINPSEUDOSTATE" />
+</key>
+<key sequence  = "S"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_STATE" />
+</key>
+<key sequence  = "T"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_TERMINATEPSEUDOSTATE" />
+</key>
+<key sequence  = "X"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_EXITPOINTPSEUDOSTATE" />
+</key>
+<key sequence  = "Y"
+     contextId = "org.modelio.diagram.StateDiagramEditorID.context"
+     schemeId  = "org.modelio.bindings.ShemeID"
+     commandId = "org.modelio.diagram.editor.SwitchToolCommandId">
+     <parameter id="toolId"  value="CREATE_FORKPSEUDOSTATE" />
+</key>
+</extension>-->
+
+</plugin>

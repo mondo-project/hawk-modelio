@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.modelio.xmi.feature"
+      label="Script"
+      version="3.2.1.qualifier"
+      provider-name="modelio.org">
+
+   <copyright>
+      Copyright 2013 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </copyright>
+
+   <license url="">
+      Copyright 2013 Modeliosoft
+
+This file is part of Modelio.
+Modelio is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+(at your option) any later version.
+Modelio is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Modelio.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+   </license>
+
+   <url>
+      <discovery label="Modelio" url="http://www.modelio.org"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.modelio.metamodel.emfapi"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.modelio.log"/>
+      <import plugin="org.modelio.ui"/>
+      <import plugin="org.modelio.api"/>
+      <import plugin="org.modelio.core.kernel"/>
+      <import plugin="org.modelio.model.browser"/>
+      <import plugin="org.eclipse.e4.core.di"/>
+      <import plugin="org.eclipse.e4.ui.services"/>
+      <import plugin="org.modelio.core.project"/>
+      <import plugin="org.modelio.core.session"/>
+      <import plugin="org.modelio.app.project.core"/>
+      <import plugin="org.modelio.app.core"/>
+      <import plugin="org.modelio.app.preferences"/>
+      <import plugin="javax.annotation"/>
+      <import plugin="javax.inject"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.7.0" match="compatible"/>
+      <import plugin="org.eclipse.emf.ecore.xmi" version="2.5.0" match="compatible"/>
+      <import plugin="org.eclipse.emf.ecore.xmi" version="2.9.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.modelio.xmi"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2"
+         download-size="0"
+         install-size="0"
+         version="3.2.0.v201101271655"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2.common"
+         download-size="0"
+         install-size="0"
+         version="1.6.0.v201105021727"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2.uml"
+         download-size="0"
+         install-size="0"
+         version="3.2.100.v201108110105"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.uml2.uml.resources"
+         download-size="0"
+         install-size="0"
+         version="3.1.100.v201008191510"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mapping.ecore2xml"
+         download-size="0"
+         install-size="0"
+         version="2.7.0.v20130610-0406"
+         unpack="false"/>
+
+</feature>

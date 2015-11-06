@@ -1,0 +1,2866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<create-popups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="create-popups.xsd">
+	<!-- Popup for AcceptCallEventAction -->
+	<popup metaclass="AcceptCallEventAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for AcceptChangeEventAction -->
+	<popup metaclass="AcceptChangeEventAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for AcceptSignalAction -->
+	<popup metaclass="AcceptSignalAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for AcceptTimeEventAction -->
+	<popup metaclass="AcceptTimeEventAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for Activity -->
+	<popup metaclass="Activity">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityPartition" />
+			<parameter name="dependency" value="OwnedGroup" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InterruptibleActivityRegion" />
+			<parameter name="dependency" value="OwnedGroup" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptCallEventAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptChangeEventAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptSignalAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptTimeEventAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="SendSignalAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InitialNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityFinalNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="FlowFinalNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ForkJoinNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DecisionMergeNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityParameterNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BehaviorParameter" />
+			<parameter name="dependency" value="Parameter" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallOperationAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallBehaviorAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OpaqueAction" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InstanceNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CentralBufferNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DataStoreNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ConditionalNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="LoopNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="StructuredActivityNode" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionRegion" />
+			<parameter name="dependency" value="OwnedNode" />
+		</command>
+		<separator />
+	</popup>
+	<!-- Popup for ActivityPartition -->
+	<popup metaclass="ActivityPartition">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityPartition" />
+			<parameter name="dependency" value="SubPartition" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptCallEventAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptChangeEventAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptSignalAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptTimeEventAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="SendSignalAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ForkJoinNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DecisionMergeNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InitialNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityFinalNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="FlowFinalNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityParameterNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallBehaviorAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallOperationAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OpaqueAction" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InstanceNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CentralBufferNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DataStoreNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ConditionalNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="LoopNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="StructuredActivityNode" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionRegion" />
+			<parameter name="dependency" value="ContainedNode" />
+		</command>
+	</popup>
+	<!-- Popup for Actor -->
+	<popup metaclass="Actor">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CollaborationUse" />
+			<parameter name="dependency" value="OwnedCollaborationUse" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.protocolstatemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+			<parameter name="i18nKey" value="ActorOwnedBehaviorProtocolStateMachine" />
+		</command>
+	</popup>
+	<!-- Popup for Artifact -->
+	<popup metaclass="Artifact">
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Artifact" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Port" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<separator />
+	</popup>
+	<!-- Popup for AssociationEnd -->
+	<popup metaclass="AssociationEnd">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="Qualifier" />
+		</command>
+	</popup>
+	<!-- Popup for BindableInstance -->
+	<popup metaclass="BindableInstance">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="Part" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AttributeLink" />
+			<parameter name="dependency" value="Slot" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Port" />
+			<parameter name="dependency" value="Part" />
+		</command>
+		<separator />
+	</popup>
+	<!-- Popup for CallBehaviorAction -->
+	<popup metaclass="CallBehaviorAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InputPin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ValuePin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for CallOperationAction -->
+	<popup metaclass="CallOperationAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InputPin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ValuePin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for Class -->
+	<popup metaclass="Class">
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Class" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Interface" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Signal" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Component" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+			<parameter name="stereotype" value="create" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+			<parameter name="stereotype" value="destroy" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="DataType" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Enumeration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CollaborationUse" />
+			<parameter name="dependency" value="OwnedCollaborationUse" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Port" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.protocolstatemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+			<parameter name="i18nKey" value="ClassOwnedBehaviorProtocolStateMachine" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Actor" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="UseCase" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InformationItem" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+	</popup>
+	<!-- Popup for Clause -->
+	<popup metaclass="Clause">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptCallEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptChangeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptTimeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="SendSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ForkJoinNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DecisionMergeNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InitialNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="FlowFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityParameterNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallBehaviorAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallOperationAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OpaqueAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InstanceNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CentralBufferNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DataStoreNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ConditionalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="LoopNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="StructuredActivityNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionRegion" />
+			<parameter name="dependency" value="Body" />
+		</command>
+	</popup>
+	<!-- Popup for Collaboration -->
+	<popup metaclass="Collaboration">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="Declared" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CollaborationUse" />
+			<parameter name="dependency" value="OwnedCollaborationUse" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.protocolstatemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+			<parameter name="i18nKey"
+				value="CollaborationOwnedBehaviorProtocolStateMachine" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InformationItem" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+	</popup>
+	<!-- Popup for CollaborationUse -->
+	<popup metaclass="CollaborationUse">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Binding" />
+			<parameter name="dependency" value="RoleBinding" />
+		</command>
+	</popup>
+	<!-- Popup for CommunicationInteraction -->
+	<popup metaclass="CommunicationInteraction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CommunicationNode" />
+			<parameter name="dependency" value="Owned" />
+		</command>
+	</popup>
+	<!-- Popup for Component -->
+	<popup metaclass="Component">
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Package" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Node" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Class" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Interface" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Signal" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Component" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Artifact" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="DataType" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Enumeration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Actor" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="UseCase" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Port" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CollaborationUse" />
+			<parameter name="dependency" value="OwnedCollaborationUse" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.protocolstatemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+			<parameter name="i18nKey"
+				value="ComponentOwnedBehaviorProtocolStateMachine" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InformationItem" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+	</popup>
+	<!-- Popup for ConditionalNode -->
+	<popup metaclass="ConditionalNode">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Clause" />
+			<parameter name="dependency" value="OwnedClause" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InputPin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ValuePin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for DataType -->
+	<popup metaclass="DataType">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+	</popup>
+	<!-- Popup for Enumeration -->
+	<popup metaclass="Enumeration">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="EnumerationLiteral" />
+			<parameter name="dependency" value="Value" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Interface" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Class" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="DataType" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Enumeration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+	</popup>
+	<!-- Popup for ExpansionRegion -->
+	<popup metaclass="ExpansionRegion">
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptCallEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptChangeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptTimeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="SendSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ForkJoinNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DecisionMergeNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InitialNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="FlowFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityParameterNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallBehaviorAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallOperationAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OpaqueAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InstanceNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CentralBufferNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DataStoreNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ConditionalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="LoopNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="StructuredActivityNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionRegion" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionNode" />
+			<parameter name="dependency" value="InputElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionNode" />
+			<parameter name="dependency" value="OutputElement" />
+		</command>
+	</popup>
+	<!-- Popup for Instance -->
+	<popup metaclass="Instance">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="Part" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AttributeLink" />
+			<parameter name="dependency" value="Slot" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Port" />
+			<parameter name="dependency" value="Part" />
+		</command>
+	</popup>
+	<!-- Popup for Interface -->
+	<popup metaclass="Interface">
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Interface" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Class" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Signal" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="DataType" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Enumeration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.protocolstatemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+			<parameter name="i18nKey"
+				value="InterfaceOwnedBehaviorProtocolStateMachine" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InformationItem" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+	</popup>
+	<!-- Popup for LoopNode -->
+	<popup metaclass="LoopNode">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptCallEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptChangeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptTimeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="SendSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ForkJoinNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DecisionMergeNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InitialNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="FlowFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityParameterNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallBehaviorAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallOperationAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OpaqueAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InstanceNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CentralBufferNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DataStoreNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="LoopNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ConditionalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="StructuredActivityNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionRegion" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InputPin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ValuePin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for Node -->
+	<popup metaclass="Node">
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Node" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Port" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CollaborationUse" />
+			<parameter name="dependency" value="OwnedCollaborationUse" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.protocolstatemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+			<parameter name="i18nKey" value="NodeOwnedBehaviorProtocolStateMachine" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InformationItem" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+	</popup>
+	<!-- Popup for OpaqueAction -->
+	<popup metaclass="OpaqueAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InputPin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ValuePin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for Operation -->
+	<popup metaclass="Operation">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Parameter" />
+			<parameter name="dependency" value="IO" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.parameter.return">
+			<parameter name="metaclass" value="Parameter" />
+			<parameter name="dependency" value="Return" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="Example" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+	</popup>
+	<!-- Popup for Package -->
+	<popup metaclass="Package">
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Package" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Class" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Interface" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Signal" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Actor" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Component" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Artifact" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Node" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="UseCase" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="DataType" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Enumeration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Instance" />
+			<parameter name="dependency" value="Declared" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InformationItem" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+	</popup>
+	<!-- Popup for Port -->
+	<popup metaclass="Port">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ProvidedInterface" />
+			<parameter name="dependency" value="Provided" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="RequiredInterface" />
+			<parameter name="dependency" value="Required" />
+		</command>
+	</popup>
+  <!-- Popup for Region -->
+	<popup metaclass="Region">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="State" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="InitialPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="TerminatePseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="JoinPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="ForkPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="ChoicePseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="JunctionPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="ShallowHistoryPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="DeepHistoryPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="FinalState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+	</popup>
+	<!-- Popup for SendSignalAction -->
+	<popup metaclass="SendSignalAction">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InputPin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ValuePin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<!--item id="org.modelio.app.ui.command.create.element" > <parameter name="metaclass" 
+			value="OutputPin" /> <parameter name="dependency" value="Output" /> </command -->
+	</popup>
+	<!-- Popup for Signal -->
+	<popup metaclass="Signal">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.association">
+			<parameter name="metaclass" value="AssociationEnd" />
+			<parameter name="dependency" value="OwnedEnd" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="DataType" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Enumeration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Port" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CollaborationUse" />
+			<parameter name="dependency" value="OwnedCollaborationUse" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+	</popup>
+	<!-- Popup for State -->
+	<popup metaclass="State">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Region" />
+			<parameter name="dependency" value="OwnedRegion" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InternalTransition" />
+			<parameter name="dependency" value="Internal" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.connectionpointreference">
+			<parameter name="metaclass" value="ConnectionPointReference" />
+			<parameter name="dependency" value="Connection" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.state.entryexitpoint">
+			<parameter name="metaclass" value="EntryPointPseudoState" />
+			<parameter name="dependency" value="EntryPoint" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.state.entryexitpoint">
+			<parameter name="metaclass" value="ExitPointPseudoState" />
+			<parameter name="dependency" value="ExitPoint" />
+		</command>
+	</popup>
+	<!-- Popup for StateMachine -->
+	<popup metaclass="StateMachine">
+		<command id="org.modelio.app.ui.command.create.statemachinesubstate">
+			<parameter name="metaclass" value="State" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="InitialPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="TerminatePseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="EntryPointPseudoState" />
+			<parameter name="dependency" value="EntryPoint" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="ExitPointPseudoState" />
+			<parameter name="dependency" value="ExitPoint" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="JoinPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="ForkPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="ChoicePseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="JunctionPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="ShallowHistoryPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="DeepHistoryPseudoState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.pseudostate">
+			<parameter name="metaclass" value="FinalState" />
+			<parameter name="dependency" value="Sub" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Event" />
+			<parameter name="dependency" value="EComponent" />
+		</command>
+	</popup>
+	<!-- Popup for StructuredActivityNode -->
+	<popup metaclass="StructuredActivityNode">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptCallEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptChangeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="AcceptTimeEventAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="SendSignalAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ForkJoinNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DecisionMergeNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InitialNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ActivityFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="FlowFinalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallBehaviorAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CallOperationAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OpaqueAction" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InstanceNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CentralBufferNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="DataStoreNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ConditionalNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="LoopNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="StructuredActivityNode" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExpansionRegion" />
+			<parameter name="dependency" value="Body" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="InputPin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ValuePin" />
+			<parameter name="dependency" value="Input" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="OutputPin" />
+			<parameter name="dependency" value="Output" />
+		</command>
+	</popup>
+	<!-- Popup for TemplateBinding -->
+	<popup metaclass="TemplateBinding">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameterSubstitution" />
+			<parameter name="dependency" value="ParameterSubstitution" />
+		</command>
+	</popup>
+	<!-- Popup for UseCase -->
+	<popup metaclass="UseCase">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Attribute" />
+			<parameter name="dependency" value="OwnedAttribute" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Operation" />
+			<parameter name="dependency" value="OwnedOperation" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="Collaboration" />
+			<parameter name="dependency" value="OwnedElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BindableInstance" />
+			<parameter name="dependency" value="InternalStructure" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="CollaborationUse" />
+			<parameter name="dependency" value="OwnedCollaborationUse" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.activity">
+			<parameter name="metaclass" value="Activity" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnBehavior" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.interaction">
+			<parameter name="metaclass" value="Interaction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.communicationinteraction">
+			<parameter name="metaclass" value="CommunicationInteraction" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.statemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.protocolstatemachine">
+			<parameter name="metaclass" value="StateMachine" />
+			<parameter name="dependency" value="OwnedBehavior" />
+			<parameter name="i18nKey" value="UseCaseOwnedBehaviorProtocolStateMachine" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExtensionPoint" />
+			<parameter name="dependency" value="OwnedExtension" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateParameter" />
+			<parameter name="dependency" value="Template" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TemplateBinding" />
+			<parameter name="dependency" value="TemplateInstanciation" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnBehavior -->
+	<popup metaclass="BpmnBehavior">
+		<command id="org.modelio.app.ui.command.create.bpmn.behavior">
+			<parameter name="metaclass" value="BpmnProcess" />
+			<parameter name="dependency" value="RootElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnCollaboration" />
+			<parameter name="dependency" value="RootElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnMessage" />
+			<parameter name="dependency" value="RootElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResource" />
+			<parameter name="dependency" value="RootElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnInterface" />
+			<parameter name="dependency" value="RootElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnEndPoint" />
+			<parameter name="dependency" value="RootElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnItemDefinition" />
+			<parameter name="dependency" value="RootElement" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnCollaboration -->
+	<popup metaclass="BpmnCollaboration">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnParticipant" />
+			<parameter name="dependency" value="Participants" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnGroup" />
+			<parameter name="dependency" value="Artifact" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnProcess -->
+	<popup metaclass="BpmnProcess">
+		<command id="org.modelio.app.ui.command.create.bpmn.laneset">
+			<parameter name="metaclass" value="BpmnLaneSet" />
+			<parameter name="dependency" value="LaneSet" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnAdHocSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnCallActivity" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTransaction" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnReceiveTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSendTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnServiceTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnUserTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnManualTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnScriptTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnBusinessRuleTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnExclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnInclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnParallelGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEventBasedGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnComplexGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnStartEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateThrowEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateCatchEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEndEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataObject" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataStore" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnLane -->
+	<popup metaclass="BpmnLane">
+		<command id="org.modelio.app.ui.command.create.bpmn.lane">
+			<parameter name="metaclass" value="BpmnLane" />
+			<parameter name="dependency" value="LaneSet" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnAdHocSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTransaction" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnCallActivity" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnReceiveTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSendTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnServiceTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnUserTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnManualTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnScriptTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnBusinessRuleTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnExclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnInclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnParallelGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEventBasedGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnComplexGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnStartEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateThrowEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateCatchEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEndEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataObject" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataStore" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnSubProcess -->
+	<popup metaclass="BpmnSubProcess">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnAdHocSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTransaction" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnCallActivity" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnReceiveTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSendTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnServiceTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnUserTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnManualTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnScriptTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnBusinessRuleTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnExclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnInclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnParallelGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEventBasedGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnComplexGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnStartEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateThrowEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateCatchEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEndEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataObject" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataStore" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnAdHocSubProcess -->
+	<popup metaclass="BpmnAdHocSubProcess">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnAdHocSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTransaction" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnCallActivity" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnReceiveTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSendTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnServiceTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnUserTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnManualTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnScriptTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnBusinessRuleTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnExclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnInclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnParallelGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEventBasedGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnComplexGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnStartEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateThrowEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateCatchEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEndEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataObject" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataStore" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for Transaction -->
+	<popup metaclass="BpmnTransaction">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnAdHocSubProcess" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTransaction" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnCallActivity" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnReceiveTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnSendTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnServiceTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnUserTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnManualTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnScriptTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnBusinessRuleTask" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnExclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnInclusiveGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnParallelGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEventBasedGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnComplexGateway" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnStartEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateThrowEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnIntermediateCatchEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnEndEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataObject" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataStore" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnCallActivity -->
+	<popup metaclass="BpmnCallActivity">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnTask -->
+	<popup metaclass="BpmnTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnSendTask -->
+	<popup metaclass="BpmnSendTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnReceiveTask -->
+	<popup metaclass="BpmnReceiveTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnServiceTask -->
+	<popup metaclass="BpmnServiceTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnUserTask -->
+	<popup metaclass="BpmnUserTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnManualTask -->
+	<popup metaclass="BpmnManualTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnScriptTask -->
+	<popup metaclass="BpmnScriptTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnBusinessRuleTask -->
+	<popup metaclass="BpmnBusinessRuleTask">
+		<command id="org.modelio.app.ui.command.create.bpmn.boundaryevent">
+			<parameter name="metaclass" value="BpmnBoundaryEvent" />
+			<parameter name="dependency" value="FlowElement" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="InputSpecification" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.flowelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="OutputSpecification" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnStandardLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnMultiInstanceLoopCharacteristics" />
+			<parameter name="dependency" value="LoopCharacteristics" />
+		</command>
+		<separator />
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnExclusiveGateway -->
+	<popup metaclass="BpmnExclusiveGateway">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnInclusiveGateway -->
+	<popup metaclass="BpmnInclusiveGateway">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnComplexGateway -->
+	<popup metaclass="BpmnComplexGateway">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnParallelGateway -->
+	<popup metaclass="BpmnParallelGateway">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnEventBasedGateway -->
+	<popup metaclass="BpmnEventBasedGateway">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+
+	<!-- Popup for BpmnDataStore -->
+	<popup metaclass="BpmnDataStore">
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnDataState" />
+			<parameter name="dependency" value="DataState" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnDataInput -->
+	<popup metaclass="BpmnDataInput">
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnDataState" />
+			<parameter name="dependency" value="DataState" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnDataObject -->
+	<popup metaclass="BpmnDataObject">
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnDataState" />
+			<parameter name="dependency" value="DataState" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnDataOutput -->
+	<popup metaclass="BpmnDataOutput">
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnDataState" />
+			<parameter name="dependency" value="DataState" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnComplexBehaviorDefinition -->
+	<popup metaclass="BpmnComplexBehaviorDefinition">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnImplicitThrowEvent" />
+			<parameter name="dependency" value="Event" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnMultiInstanceLoopCharacteristics -->
+	<popup metaclass="BpmnMultiInstanceLoopCharacteristics">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="LoopDataInput" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="LoopDataOutputRef" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.bpmn.uniqueelement">
+			<parameter name="metaclass" value="BpmnComplexBehaviorDefinition" />
+			<parameter name="dependency" value="ComplexBehaviorDefinition" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnImplicitThrowEvent -->
+	<popup metaclass="BpmnImplicitThrowEvent">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="DataInput" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnIntermediateThrowEvent -->
+	<popup metaclass="BpmnIntermediateThrowEvent">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="DataInput" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnEndEvent -->
+	<popup metaclass="BpmnEndEvent">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnDataInput" />
+			<parameter name="dependency" value="DataInput" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+
+	<!-- Popup for BpmnStartEvent -->
+	<popup metaclass="BpmnStartEvent">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="DataOutput" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnIntermediateCatchEvent -->
+	<popup metaclass="BpmnCatchEvent">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnDataOutput" />
+			<parameter name="dependency" value="DataOutput" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceRole" />
+			<parameter name="dependency" value="Resource" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnResource -->
+	<popup metaclass="BpmnResource">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnResourceParameter" />
+			<parameter name="dependency" value="Parameter" />
+		</command>
+	</popup>
+	<!-- Popup for BpmnResourceRole -->
+	<popup metaclass="BpmnResourceRole">
+	</popup>
+	<!-- Popup for BpmnInterface -->
+	<popup metaclass="BpmnInterface">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="BpmnOperation" />
+			<parameter name="dependency" value="Operation" />
+		</command>
+	</popup>
+
+	<!-- Popup for ModuleComponent -->
+	<popup metaclass="ModuleComponent">
+		<command id="org.modelio.app.ui.command.create.cmselement">
+			<parameter name="metaclass" value="Profile" />
+			<parameter name="dependency" value="OwnedProfile" />
+		</command>
+	</popup>
+	<!-- Popup for Profile -->
+	<popup metaclass="Profile">
+		<command id="org.modelio.app.ui.command.createstereotype">
+			<parameter name="metaclass" value="Stereotype" />
+			<parameter name="dependency" value="DefinedStereotype" />
+		</command>
+	</popup>
+	<!-- Popup for Stereotype -->
+	<popup metaclass="Stereotype">
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="NoteType" />
+			<parameter name="dependency" value="DefinedNoteType" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="TagType" />
+			<parameter name="dependency" value="DefinedTagType" />
+		</command>
+		<command id="org.modelio.app.ui.command.create.element">
+			<parameter name="metaclass" value="ExternDocumentType" />
+			<parameter name="dependency" value="DefinedExternDocumentType" />
+		</command>
+	</popup>
+</create-popups>

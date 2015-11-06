@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_MzwjcI4sEeGhiYrv9jYZww">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ZWk9sB3dEeKvYtQlpLRNvw" featurename="commands" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Command" xmi:id="_jrBZ4D_HEeKYDuxvZV8bnA" elementId="org.modelio.mda.infra.catalog.OpenCatalog" commandName="%OpenCatalog.name" description="%OpenCatalog.description"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_447v0H9GEeK-XvSICEmsLA" featurename="children" parentElementId="org.modelio.app.ui.menu.configuration" positionInList="after:org.modelio.app.ui.menu.configuration.1">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_A_JB8H9HEeK-XvSICEmsLA" elementId="org.modelio.mda.infra.catalog.menuitem.opencatalog" label="%OpenCatalog.label" iconURI="platform:/plugin/org.modelio.mda.infra/icons/modulecatalog.png" tooltip="%OpenCatalog.tooltip" command="_jrBZ4D_HEeKYDuxvZV8bnA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ge9rkK26EeK5XJXWyLd1YA" featurename="handlers" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Handler" xmi:id="_wkMpwK26EeK5XJXWyLd1YA" elementId="mda.infra.handler.0" contributionURI="bundleclass://org.modelio.mda.infra/org.modelio.mda.infra.catalog.OpenCatalogHandler" command="_jrBZ4D_HEeKYDuxvZV8bnA"/>
+  </fragments>
+</fragment:ModelFragments>

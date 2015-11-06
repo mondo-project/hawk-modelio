@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target includeMode="feature" name="rcp" sequenceNumber="30">
+	<locations>
+		<location path="${project_loc}/files" type="Directory"/>
+		<location path="${project_loc}/astyle" type="Directory"/>
+		<location path="${project_loc}/commons-lang" type="Directory"/>
+		<location path="${project_loc}/deltapack" type="Directory"/>
+		<location path="${project_loc}/documentation-en" type="Directory"/>
+		<location path="${project_loc}/eclipse" type="Directory"/>
+		<location path="${project_loc}/emf" type="Directory"/>
+		<location path="${project_loc}/gef" type="Directory"/>
+		<location path="${project_loc}/nebula" type="Directory"/>
+		<location path="${project_loc}/nebula-incubator" type="Directory"/>
+		<location path="${project_loc}/nebula-nattable" type="Directory"/>
+		
+		
+		<location path="${project_loc}/uml2_3.2" type="Directory"/>
+		
+		<location path="${project_loc}/ktable" type="Directory"/>
+		
+		
+	</locations>
+</target>

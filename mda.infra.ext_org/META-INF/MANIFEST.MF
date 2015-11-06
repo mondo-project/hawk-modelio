@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Infra
+Bundle-SymbolicName: org.modelio.mda.infra.ext
+Bundle-Version: 3.2.1.qualifier
+Fragment-Host: org.modelio.mda.infra
+Bundle-ClassPath: res/

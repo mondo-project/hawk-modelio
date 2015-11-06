@@ -1,0 +1,22 @@
+.svn/
+/.metadata/
+/workspace/
+.sonar/
+cachedir/
+*.old
+*.log
+/*/runtime/target
+sonar-project.properties
+*/target/
+*/bin/
+editors.richnote.libreoffice/runtime/bin/
+/*/feature.temp.folder/
+.config/
+*$py.class
+*.class
+*~
+/apl_ copyright.txt
+/com_copyright.txt
+/gpl_copyright.txt
+/mda.jar.xml
+/INTEGRATION/.jenkins*

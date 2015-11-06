@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.modelio.diagram.creation.wizard.contributor" name="DiagramCreationContributor" schema="schema/org.modelio.diagram.creation.wizard.contributor.exsd"/>
+
+	<extension point="org.eclipse.e4.workbench.model"  id="modelContribution">
+	      <fragment uri="e4model/diagram.creation.wizard.e4xmi"></fragment>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.ActivityDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.BpmnProcessCollaborationDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.BpmnSubProcessDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.ClassDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.CommunicationDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.CompositeDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.DeploymentDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.ObjectDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.SequenceDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.StateDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.modelio.diagram.creation.wizard.contributor">
+		<diagramcreation
+				categoryType = "%ContributorCategoryType.UML"
+				categoryLabel = "%ContributorCategoryLabel.UML"
+				categoryIcon = "./icons/umldiagram.png"
+				contributor="org.modelio.diagram.creation.wizard.contributor.UseCaseDiagramCreationContributor">
+		</diagramcreation>
+	</extension>
+	
+	<extension point="org.eclipse.core.expressions.definitions">
+   		<definition id="diagram.creation.wizard.test.classdiagram.id">
+			<test args="ClassDiagramCreationContributor"
+				property="diagram.creation.wizard.test.classdiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.deploymentdiagram.id">
+			<test args="DeploymentDiagramCreationContributor"
+				property="diagram.creation.wizard.test.deploymentdiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.objectdiagram.id">
+			<test args="ObjectDiagramCreationContributor"
+				property="diagram.creation.wizard.test.objectdiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.usecasdiagram.id">
+			<test args="UseCaseDiagramCreationContributor"
+				property="diagram.creation.wizard.test.usecasdiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.sequencediagram.id">
+			<test args="SequenceDiagramCreationContributor"
+				property="diagram.creation.wizard.test.sequencediagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.statediagram.id">
+			<test args="StateDiagramCreationContributor"
+				property="diagram.creation.wizard.test.statediagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.activitydiagram.id">
+			<test args="ActivityDiagramCreationContributor"
+				property="diagram.creation.wizard.test.activitydiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.communicationdiagram.id">
+			<test args="CommunicationDiagramCreationContributor"
+				property="diagram.creation.wizard.test.communicationdiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.compositediagram.id">
+			<test args="CompositeDiagramCreationContributor"
+				property="diagram.creation.wizard.test.compositediagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.bpmnprocesscollaborationdiagram.id">
+			<test args="BpmnProcessCollaborationDiagramCreationContributor"
+				property="diagram.creation.wizard.test.bpmnprocesscollaborationdiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.bpmnsubprocessdiagram.id">
+			<test args="BpmnSubProcessDiagramCreationContributor"
+				property="diagram.creation.wizard.test.bpmnsubprocessdiagram">
+			</test>
+		</definition>
+		<definition id="diagram.creation.wizard.test.opendiagramwizard.id">
+			<test property="diagram.creation.wizard.test.opendiagramwizard">
+			</test>
+		</definition>
+	</extension>
+  
+	<extension point="org.eclipse.core.expressions.propertyTesters">
+		<propertyTester
+			class="org.modelio.diagram.creation.wizard.handler.properties.CommandVisiblePropertyTester"
+			id="diagram.creation.wizard.propertyTester.updatevisible"
+			namespace="diagram.creation.wizard.test"
+			properties="classdiagram, deploymentdiagram, objectdiagram, usecasdiagram, 
+						sequencediagram, statediagram, activitydiagram, communicationdiagram, 
+						compositediagram, bpmnprocesscollaborationdiagram, bpmnsubprocessdiagram,
+						opendiagramwizard"
+			type="org.eclipse.jface.viewers.ISelection">
+		</propertyTester>
+	</extension>
+
+</plugin>

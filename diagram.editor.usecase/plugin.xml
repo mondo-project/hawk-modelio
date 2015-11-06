@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<plugin>
+	<!--
+==================================================================================   
+ Perspective definitions and contributions                                        
+==================================================================================
+-->	
+<extension id="diagram.usecase" point="org.eclipse.e4.workbench.model">
+	<fragment
+		uri="e4model/diagram_usecase_editor.e4xmi">
+	</fragment>
+	<processor beforefragment="true" class="org.modelio.diagram.editor.usecase.plugin.UseCaseProcessor"/>
+</extension>
+
+<extension point="org.modelio.diagram.editor.inputprovider">
+	<inputprovider class="org.modelio.diagram.editor.usecase.editor.UseCaseDiagramEditorInputProvider"/>
+</extension>
+
+<extension
+      point="org.modelio.diagram.editor.toolregistry">
+   <creationtool
+         id="CREATE_USECASE"
+         interactor="node"
+         label="%UseCase.label"
+         tooltip="%UseCase.tooltip">
+      <context
+            dependency="OwnedElement"
+            metaclass="UseCase">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_EXTENSIONPOINT"
+         interactor="node"
+         label="%ExtensionPoint.label"
+         tooltip="%ExtensionPoint.tooltip">
+      <context
+            dependency="OwnedExtension"
+            metaclass="ExtensionPoint">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_USECASEDEPENDENCYINCLUDE"
+         interactor="link"
+         label="%UseCaseDependencyInclude.label"
+         tooltip="%UseCaseDependencyInclude.tooltip">
+      <context
+            metaclass="UseCaseDependency"
+            stereotype="include"
+            router="USECASEDEPENDENCY_ROUTINGMODE">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_USECASEDEPENDENCYEXTEND"
+         interactor="link"
+         label="%UseCaseDependencyExtend.label"
+         tooltip="%UseCaseDependencyExtend.tooltip">
+      <context
+            metaclass="UseCaseDependency"
+            stereotype="extend"
+            router="USECASEDEPENDENCY_ROUTINGMODE">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_ACTOR"
+         interactor="point"
+         label="%Actor.label"
+         tooltip="%Actor.tooltip">
+      <context
+            dependency="OwnedElement"
+            metaclass="Actor">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_ACTORSECONDARY"
+         interactor="point"
+         label="%ActorSecondary.label"
+         tooltip="%ActorSecondary.tooltip">
+      <context
+            dependency="OwnedElement"
+            metaclass="Actor"
+            stereotype="secondary">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_ACTORPRIMARY"
+         interactor="point"
+         label="%ActorPrimary.label"
+         tooltip="%ActorPrimary.tooltip">
+      <context
+            dependency="OwnedElement"
+            metaclass="Actor"
+            stereotype="primary">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_ACTORSYSTEM"
+         interactor="point"
+         label="%ActorSystem.label"
+         tooltip="%ActorSystem.tooltip">
+      <context
+            dependency="OwnedElement"
+            metaclass="Actor"
+            stereotype="system">
+      </context>
+   </creationtool>
+   <creationtool
+         id="CREATE_COMMUNICATIONLINK"
+         interactor="link"
+         label="%CommunicationLink.label"
+         tooltip="%CommunicationLink.tooltip"
+         icon="icons/communicationlink.png">
+      <context
+            dependency="null"
+            metaclass="AssociationEnd"
+            router="ASSOC_CONNECTIONROUTER">
+      </context>
+   </creationtool>
+</extension>
+</plugin>

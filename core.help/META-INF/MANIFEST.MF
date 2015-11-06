@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Localization: plugin
+Bundle-Name: Core Help
+Bundle-SymbolicName: org.modelio.core.help
+Bundle-Version: 3.2.1.qualifier
+Bundle-Vendor: Modelio
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.osgi,
+ org.modelio.log,
+ org.eclipse.swt,
+ org.eclipse.help.base,
+ org.eclipse.ui.workbench,
+ org.eclipse.jface,
+ org.modelio.ui
+Export-Package: org.modelio.core.help.system
+Bundle-ClassPath: .,
+ res/
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.modelio.core.help.plugin.CoreHelp

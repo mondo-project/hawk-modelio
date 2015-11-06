@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension point="org.eclipse.e4.workbench.model" id="modelContribution">
+	<fragment uri="e4model/diagramauto.e4xmi"></fragment>
+</extension>
+
+<extension point="org.eclipse.core.expressions.definitions">
+	<definition id="diagram.auto.test.classstructure.id">
+		<test property="diagram.auto.test.classstructure"/>
+	</definition>
+	<definition id="diagram.auto.test.dependencies.id">
+		<test property="diagram.auto.test.dependencies"/>
+	</definition>
+	<definition id="diagram.auto.test.inheritance.id">
+		<test property="diagram.auto.test.inheritance"/>
+	</definition>
+	<definition id="diagram.auto.test.packagstructure.id">
+		<test property="diagram.auto.test.packagstructure"/>
+	</definition>
+	<definition id="diagram.auto.test.subpackagstructure.id">
+		<test property="diagram.auto.test.subpackagstructure"/>
+	</definition>
+	<definition id="diagram.auto.test.updatediagram.id">
+		<test property="diagram.auto.test.updatediagram"/>
+	</definition>
+ </extension>
+ 
+ <extension
+       point="org.eclipse.core.expressions.propertyTesters">
+    <propertyTester
+          class="org.modelio.diagram.diagramauto.handlers.properties.CommandVisiblePropertyTester"
+          id="diagram.auto.propertyTester.updatevisible"
+          namespace="diagram.auto.test"
+          properties="classstructure, dependencies, inheritance, packagstructure, subpackagstructure, updatediagram"
+          type="org.eclipse.jface.viewers.ISelection">
+    </propertyTester>
+ </extension>
+
+</plugin>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<create-popups>
+<!-- Popup for State -->
+  <popup metaclass="State">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="Region"/>
+      <parameter name="dependency" value="OwnedRegion"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InternalTransition"/>
+      <parameter name="dependency" value="Internal"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.connectionpointreference">
+      <parameter name="metaclass" value="ConnectionPointReference"/>
+      <parameter name="dependency" value="Connection"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.state.entryexitpoint">
+      <parameter name="metaclass" value="EntryPointPseudoState"/>
+      <parameter name="dependency" value="EntryPoint"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.state.entryexitpoint">
+      <parameter name="metaclass" value="ExitPointPseudoState"/>
+      <parameter name="dependency" value="ExitPoint"/>
+    </command>
+  </popup>
+  <!-- Popup for Region -->
+  <popup metaclass="Region">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass"  value="State" />
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="TerminatePseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="JoinPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ChoicePseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="JunctionPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ShallowHistoryPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DeepHistoryPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FinalState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+  </popup>
+  <!-- Popup for StateMachine -->
+  <popup metaclass="StateMachine">
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="State"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="InitialPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="TerminatePseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="EntryPointPseudoState"/>
+      <parameter name="dependency" value="EntryPoint"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ExitPointPseudoState"/>
+      <parameter name="dependency" value="ExitPoint"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="JoinPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ForkPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ChoicePseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="JunctionPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="ShallowHistoryPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="DeepHistoryPseudoState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="FinalState"/>
+      <parameter name="dependency" value="Sub"/>
+    </command>
+    <command id="org.modelio.app.ui.command.create.element">
+      <parameter name="metaclass" value="Event"/>
+      <parameter name="dependency" value="EComponent"/>
+    </command>
+  </popup>
+</create-popups>
+

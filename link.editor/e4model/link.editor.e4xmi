@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_YQKi0EN6EeK0D9nRHZj9jw">
+  <imports xsi:type="menu:Menu" xmi:id="_JcNC8H9JEeK-XvSICEmsLA" elementId="org.modelio.app.ui.menu.views"/>
+  <imports xsi:type="commands:Command" xmi:id="_GRezYH9JEeK-XvSICEmsLA" elementId="org.modelio.app.ui.command.showview"/>
+  <imports xsi:type="commands:Command" xmi:id="_zEBOANfyEeKjSfPDByQfxw" elementId="org.modelio.app.ui.command.ShowImpactCause"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Ga7xMEN7EeK0D9nRHZj9jw" featurename="sharedElements" parentElementId="org.modelio.app.ui.trimmed">
+    <elements xsi:type="basic:Part" xmi:id="_tpwLIERtEeK0D9nRHZj9jw" elementId="org.modelio.linkeditor.view.LinkEditorViewID" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.view.LinkEditorView" label="%LinkEditorView.Name" iconURI="platform:/plugin/org.modelio.link.editor/icons/linkeditor.png" bindingContexts="_jvZPERFmEeOVyLqlIspOaA" closeable="true">
+      <handlers xmi:id="_h8f0YF_5EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handler.ZoomIn" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.zoom.ZoomInHandler" command="_e0iUAF_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_8yeV4GCJEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handler.ZoomOut" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.zoom.ZoomOutHandler" command="_qpg98F_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_KtjwsGCKEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handler.ZoomToFit" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.zoom.ZoomToDefaultHandler" command="_lsax0F_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_onMdcGCLEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handler.Print" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.image.PrintHandler" command="_zsk54F_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_7Ax8gGCOEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.SaveAsImage" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.image.SaveAsImageHandler" command="_6AZoYF_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_JMkFwGCPEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.CopyImageToClipboard" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.image.CopyImageToClipboardHandler" command="_9K51gF_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_or8dwGCPEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.PinEditor" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.pineditor.PinEditorHandler" command="_j9pNwF_uEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_mz09MGCdEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.SetOrientation" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.setorientation.SetOrientationHandler" command="_9WBLQF_uEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_2Hp2IGCpEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ShowInheritance" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.showinheritance.ShowInheritanceHandler" command="_X56WIF_uEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_AvJZQGCqEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ShowAssociation" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.showassociation.ShowAssociationHandler" command="_KpvgkF_uEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_5GuZ4GCqEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ShowElementImport" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.showelementimport.ShowElementImportHandler" command="_Q93KAF_uEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_B3CjgGCsEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ShowTrace" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.showtrace.ShowTraceHandler" command="_c6ho8F_xEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_sioDUGCuEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ShowDependency" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.showdependency.ShowDependencyHandler" command="_RANv4F_tEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_orqRcGCxEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.SetDependencyFilter" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.setdependencyfilter.SetDependencyFilterHandler" command="_c0eLoF_uEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_nWMBYGCzEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ApplyDependencyFilter" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.applydependencyfilter.ApplyDependencyFilterHandler" command="_TdqiYF_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_z_zX0GC0EeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ApplyDependencyFilter" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.shownamespaceuse.ShowNamespaceUseHandler" command="_DGu6wF_xEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_f9e00GC7EeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.Delete" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.delete.DeleteSelectionHandler" command="_br0PkF_wEeKxFZW_aaCuxw"/>
+      <handlers xmi:id="_AaI38GC9EeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handler.ShowImpactCause" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.showcause.ShowCauseHandler" command="_zEBOANfyEeKjSfPDByQfxw"/>
+      <handlers xmi:id="_sN-yYGV3EeKtruKl39yArQ" elementId="org.modelio.linkeditor.handler.SelectInExplorer" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.selectinexplorer.SelectInExplorerHandler" command="_Yv8FUGV3EeKtruKl39yArQ"/>
+      <menus xmi:id="_SpgvUF_1EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.viewmenu">
+        <tags>ViewMenu</tags>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6GQKAF_2EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.viewmenu.SetHorizontalOrientationLayout" label="%SetOrientationHorizontal" iconURI="platform:/plugin/org.modelio.link.editor/icons/Horizontal_Orientation.png" tooltip="%SetOrientationHorizontal" type="Radio" command="_9WBLQF_uEeKxFZW_aaCuxw">
+          <parameters xmi:id="_6ABJsF_3EeKxFZW_aaCuxw" elementId="LayoutOrientation" name="LayoutOrientation" value="Horizontal"/>
+        </children>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_BVh0IF_3EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.viewmenu.SetVerticalOrientationLayout" label="%SetOrientationVertical" iconURI="platform:/plugin/org.modelio.link.editor/icons/Vertical_Orientation.png" tooltip="%SetOrientationVertical" type="Radio" command="_9WBLQF_uEeKxFZW_aaCuxw">
+          <parameters xmi:id="_2lHwIF_3EeKxFZW_aaCuxw" elementId="LayoutOrientation" name="LayoutOrientation" value="Vertical"/>
+        </children>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_D-gBgF_3EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.viewmenu.SetAutoOrientationLayout" label="%SetOrientationAuto" iconURI="platform:/plugin/org.modelio.link.editor/icons/Automatic_Orientation.png" tooltip="%SetOrientationAuto" type="Radio" command="_9WBLQF_uEeKxFZW_aaCuxw">
+          <parameters xmi:id="_KCPFkF_3EeKxFZW_aaCuxw" elementId="LayoutOrientation" name="LayoutOrientation" value="Auto"/>
+        </children>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_o_6C8GVuEeKpoNjm4nPb8Q" elementId="org.modelio.linkeditor.popupmenu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_0Ie54GVuEeKpoNjm4nPb8Q" elementId="org.modelio.linkeditor.popupmenu.Delete" label="%Delete" iconURI="platform:/plugin/org.modelio.link.editor/icons/delete.png" tooltip="%Delete" command="_br0PkF_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_LQ3REGV3EeKtruKl39yArQ" elementId="org.modelio.linkeditor.popupmenu.ShowCause" label="%ShowCause" iconURI="platform:/plugin/org.modelio.link.editor/icons/show_cause.png" tooltip="%ShowCause" command="_zEBOANfyEeKjSfPDByQfxw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_QynpcGV3EeKtruKl39yArQ" elementId="org.modelio.linkeditor.popupmenu.SelectInExplorer" label="%SelectInExplorer" iconURI="platform:/plugin/org.modelio.link.editor/icons/select.png" tooltip="%SelectInExplorer" command="_Yv8FUGV3EeKtruKl39yArQ"/>
+      </menus>
+      <toolbar xmi:id="_wo__4EUwEeK0D9nRHZj9jw" elementId="org.modelio.linkeditor.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_oIKmEF_xEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handledtoolitem.ZoomIn" label="%zoom_in.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/zoom_in.png" tooltip="%zoom_in.tooltip" command="_e0iUAF_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_jJy8sF_zEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handledtoolitem.ZoomOut" label="%zoom_out.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/zoom_out.png" tooltip="%zoom_out.tooltip" command="_qpg98F_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_WGI5IF_zEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handledtoolitem.ZoomToDefault" label="%zoom_to_default.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/zoom_to_default.png" tooltip="%zoom_to_default.tooltip" command="_lsax0F_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_5xU7gF_5EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.separator.ZoomSeparator"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_0RLUYF_zEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handledtoolitem.Print" label="%print.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/print.png" tooltip="%print.tooltip" command="_zsk54F_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6KeqEF_zEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handledtoolitem.SaveAsImage" label="%save_image.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/save_image.png" tooltip="%save_image.tooltip" command="_6AZoYF_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qQ6T4F_0EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handledtoolitem.CopyToClipboard" label="%copy_image.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/copy_image.png" tooltip="%copy_image.tooltip" command="_9K51gF_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_JOBTAF_6EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.separator.ImageSeparator"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4zoWcF_0EeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.handledtoolitem.PinEditor" label="%pin_editor.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/EditionMode.png" tooltip="%pin_editor.tooltip" type="Check" command="_j9pNwF_uEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_hXOh4GCuEeKZr6syzOEatQ" elementId="link.editor.toolbarseparator.0"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zYFuAGCoEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.ShowInheritance" label="%ShowInheritance" iconURI="platform:/plugin/org.modelio.link.editor/icons/generalization.png" tooltip="%ShowInheritance" selected="true" type="Check" command="_X56WIF_uEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_lunLIGCpEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.ShowAssociation" label="%ShowAssociation" iconURI="platform:/plugin/org.modelio.link.editor/icons/association.png" tooltip="%ShowAssociation" selected="true" type="Check" command="_KpvgkF_uEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_t06HYGCqEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.ShowImportElement" label="%ShowElementImport" iconURI="platform:/plugin/org.modelio.link.editor/icons/elementimport.png" tooltip="%ShowElementImport" type="Check" command="_Q93KAF_uEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_1SrEAGCrEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.ShowTrace" label="%ShowTrace" iconURI="platform:/plugin/org.modelio.link.editor/icons/traceability.png" tooltip="%ShowTrace" type="Check" command="_c6ho8F_xEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_lBBTEGCuEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.ShowDependency" label="%ShowDependency" iconURI="platform:/plugin/org.modelio.link.editor/icons/dependency.png" tooltip="%ShowDependency" type="Check" command="_RANv4F_tEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_FGHN8GC0EeKZr6syzOEatQ" elementId="link.editor.toolbarseparator.0"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_RMfmYGCzEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.ApplyDependencyFilter" label="%ApplyDependencyFilter" iconURI="platform:/plugin/org.modelio.link.editor/icons/Filter.png" tooltip="%ApplyDependencyFilter" type="Check" command="_TdqiYF_wEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hTQ9AGCwEeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.SetDependencyFilter" label="%SetDependencyFilter" iconURI="platform:/plugin/org.modelio.link.editor/icons/EditFilter.png" tooltip="%SetDependencyFilter" command="_c0eLoF_uEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_dCjY8GC0EeKZr6syzOEatQ" elementId="org.modelio.linkeditor.handledtoolitem.ShowNamespaceUse" label="%ShowNamespaceUse" iconURI="platform:/plugin/org.modelio.link.editor/icons/namespaceuse.png" tooltip="%ShowNamespaceUse" type="Check" command="_DGu6wF_xEeKxFZW_aaCuxw"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_Yo8e8GC1EeKZr6syzOEatQ" elementId="link.editor.toolbarseparator.0"/>
+        <children xsi:type="menu:ToolControl" xmi:id="_lZO6kGC1EeKZr6syzOEatQ" elementId="org.modelio.linkeditor.toolcontrol.LeftDepthSpinner" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.leftdepth.LeftDepthSpinner"/>
+        <children xsi:type="menu:ToolControl" xmi:id="_Fm_mEGC3EeKZr6syzOEatQ" elementId="org.modelio.linkeditor.toolcontrol.RightDepthSpinner" accessibilityPhrase="" contributionURI="bundleclass://org.modelio.link.editor/org.modelio.linkeditor.rightdepth.RightDepthSpinner"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_EOSVgF_tEeKxFZW_aaCuxw" featurename="commands" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Command" xmi:id="_RANv4F_tEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ShowDependencyCommand" commandName="%ShowDependency" description="%ShowDependency">
+      <parameters xmi:id="_GDcD0F_uEeKxFZW_aaCuxw" elementId="link.editor.commandparameter.0" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_KpvgkF_uEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ShowAssociationCommand" commandName="%ShowAssociation" description="%ShowAssociation">
+      <parameters xmi:id="_Olkc8F_uEeKxFZW_aaCuxw" elementId="link.editor.showassociation.commandparameter.0" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_Q93KAF_uEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ShowElementImportCommand" commandName="%ShowElementImport" description="%ShowElementImport">
+      <parameters xmi:id="_UhGnQF_uEeKxFZW_aaCuxw" elementId="link.editor.showelementimport.commandparameter.0" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_X56WIF_uEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ShowInheritanceCommand" commandName="%ShowInheritance" description="%ShowInheritance">
+      <parameters xmi:id="_a06usF_uEeKxFZW_aaCuxw" elementId="link.editor.showinheritance.commandparameter.0" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_c0eLoF_uEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.SetDependencyFilterCommand" commandName="%SetDependencyFilter" description="%SetDependencyFilter"/>
+    <elements xsi:type="commands:Command" xmi:id="_j9pNwF_uEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.PinEditorCommand" commandName="%PinEditor" description="%PinEditor">
+      <parameters xmi:id="_nuJq8F_uEeKxFZW_aaCuxw" elementId="link.editor.pineditor.toggleState" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_9WBLQF_uEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.SetOrientationRadioCommand" commandName="%SetOrientation" description="%SetOrientation">
+      <parameters xmi:id="_C9lQsF_vEeKxFZW_aaCuxw" elementId="LayoutOrientation" name="LayoutOrientation" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_TdqiYF_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ApplyDependencyFilterCommand" commandName="%ApplyDependencyfilter" description="%ApplyDependencyfilter">
+      <parameters xmi:id="_Xy-VwF_wEeKxFZW_aaCuxw" elementId="link.editor.applydependencyfilter.commandparameter.0" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_br0PkF_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.DeleteSelectionCommand" commandName="%DeleteSelection" description="%DeleteSelection"/>
+    <elements xsi:type="commands:Command" xmi:id="_e0iUAF_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ZoomInCommand" commandName="%ZoomIn.Name" description="%ZoomIn.Description"/>
+    <elements xsi:type="commands:Command" xmi:id="_qpg98F_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ZoomOutCommand" commandName="%ZoomOut.Name" description="%ZoomOut.Description"/>
+    <elements xsi:type="commands:Command" xmi:id="_lsax0F_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ZoomToDefaultCommand" commandName="%ZoomToDefaultCommand" description="%ZoomToDefaultCommand"/>
+    <elements xsi:type="commands:Command" xmi:id="_zsk54F_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.PrintCommand" commandName="%Print" description="%Print"/>
+    <elements xsi:type="commands:Command" xmi:id="_6AZoYF_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.SaveAsImageCommand" commandName="%SaveAsImage" description="%SaveAsImage"/>
+    <elements xsi:type="commands:Command" xmi:id="_9K51gF_wEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.CopyImageToClipboardCommand" commandName="%CopyImageToClipboard" description="%CopyImageToClipboard"/>
+    <elements xsi:type="commands:Command" xmi:id="_DGu6wF_xEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ShowNamespaceUseCommand" commandName="%ShowNamespaceUse" description="%ShowNamespaceUse">
+      <parameters xmi:id="_HksT0F_xEeKxFZW_aaCuxw" elementId="link.editor.shownamespaceuse.commandparameter.0" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_c6ho8F_xEeKxFZW_aaCuxw" elementId="org.modelio.linkeditor.command.ShowTraceCommand" commandName="%ShowTrace" description="%ShowTrace">
+      <parameters xmi:id="_gZ5S0F_xEeKxFZW_aaCuxw" elementId="link.editor.showtrace.commandparameter.0" name="toggleState" optional="false"/>
+    </elements>
+    <elements xsi:type="commands:Command" xmi:id="_Yv8FUGV3EeKtruKl39yArQ" elementId="org.modelio.linkeditor.command.SelectInExplorer" commandName="%SelectInExplorer" description="%SelectInExplorer"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_K2108H9JEeK-XvSICEmsLA" featurename="children" parentElementId="org.modelio.app.ui.menu.views">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_PwzNgH9JEeK-XvSICEmsLA" elementId="org.modelio.linkeditor.menuitem.showview" label="%LinkEditorShowView.label" iconURI="platform:/plugin/org.modelio.link.editor/icons/linkeditor.png" tooltip="%LinkEditorShowView.tooltip" command="_GRezYH9JEeK-XvSICEmsLA">
+      <parameters xmi:id="_W32vwH9JEeK-XvSICEmsLA" elementId="org.modelio.app.ui.command.showview.viewid" name="org.modelio.app.ui.command.showview.viewid" value="org.modelio.linkeditor.view.LinkEditorViewID"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_AjqhMN_OEeKdg8e0rQGLrw" featurename="children" parentElementId="org.modelio.app.bottom.parts">
+    <elements xsi:type="advanced:Placeholder" xmi:id="_AjqhMd_OEeKdg8e0rQGLrw" elementId="org.modelio.linkeditor.placeholder" ref="_tpwLIERtEeK0D9nRHZj9jw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_jUPkIBFmEeOVyLqlIspOaA" featurename="bindingTables" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:BindingTable" xmi:id="_jUPkIRFmEeOVyLqlIspOaA" elementId="org.modelio.linkeditor.bindings.table" bindingContext="_jvZPERFmEeOVyLqlIspOaA">
+      <bindings xmi:id="_jUPkIhFmEeOVyLqlIspOaA" elementId="" keySequence="DEL" command="_br0PkF_wEeKxFZW_aaCuxw"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_jvZPEBFmEeOVyLqlIspOaA" featurename="children" parentElementId="org.eclipse.ui.contexts.window">
+    <elements xsi:type="commands:BindingContext" xmi:id="_jvZPERFmEeOVyLqlIspOaA" elementId="org.modelio.linkeditor.bindings.context" name="%LinkEditor.context.name" description="%LinkEditor.description"/>
+  </fragments>
+</fragment:ModelFragments>

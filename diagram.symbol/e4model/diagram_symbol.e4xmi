@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_SStKIBkuEeKBs_xOlJ3WVQ">
+  <imports xsi:type="commands:Command" xmi:id="_POg4cH9MEeK-XvSICEmsLA" elementId="org.modelio.app.ui.command.showview"/>
+  <imports xsi:type="menu:Menu" xmi:id="_Rj-7AH9MEeK-XvSICEmsLA" elementId="org.modelio.app.ui.menu.views"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ScZtIFiyEeKw4Kse-CvnOQ" featurename="sharedElements" parentElementId="org.modelio.app.ui.trimmed">
+    <elements xsi:type="basic:Part" xmi:id="_h_BtgFiyEeKw4Kse-CvnOQ" elementId="org.modelio.diagram.symbol.SymbolViewID" contributionURI="bundleclass://org.modelio.diagram.symbol/org.modelio.diagram.symbol.view.SymbolView" label="%Symbol" iconURI="platform:/plugin/org.modelio.diagram.symbol/icons/propertyView.png" closeable="true">
+      <handlers xmi:id="_SgxR8FjBEeKTlqeE1HNXCQ" contributionURI="bundleclass://org.modelio.diagram.symbol/org.modelio.diagram.symbol.view.handlers.SymbolHelpHandler" command="_4J66AFjAEeKTlqeE1HNXCQ"/>
+      <handlers xmi:id="_YVZjAFjBEeKTlqeE1HNXCQ" contributionURI="bundleclass://org.modelio.diagram.symbol/org.modelio.diagram.symbol.view.handlers.ResetLocalStyleHandler" command="_8PjSoFjAEeKTlqeE1HNXCQ"/>
+      <toolbar xmi:id="_CmoR0FizEeKw4Kse-CvnOQ" elementId="diagram.symbol.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_UKcG0FizEeKw4Kse-CvnOQ" elementId="diagram.symbol.handledtoolitem.0" label="%Reset.tooltip" iconURI="platform:/plugin/org.modelio.diagram.symbol/icons/resetstyle.png" tooltip="%Reset.tooltip" command="_8PjSoFjAEeKTlqeE1HNXCQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_u4c5MFjBEeKTlqeE1HNXCQ" elementId="diagram.symbol.handledtoolitem.0" label="%ShowSymbolHelp.tooltip" iconURI="platform:/plugin/org.modelio.diagram.symbol/icons/help.png" tooltip="%ShowSymbolHelp.tooltip" command="_4J66AFjAEeKTlqeE1HNXCQ"/>
+        <children xsi:type="menu:ToolControl" xmi:id="_W4Dh0FjuEeKTlqeE1HNXCQ" elementId="org.modelio.diagram.symbol.StyleSelectorID" contributionURI="bundleclass://org.modelio.diagram.symbol/org.modelio.diagram.symbol.view.StyleSelector"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_YyX7QFizEeKw4Kse-CvnOQ" featurename="commands" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Command" xmi:id="_4J66AFjAEeKTlqeE1HNXCQ" elementId="org.modelio.diagrams.symbol.SymbolHelp" commandName="Symbol Help"/>
+    <elements xsi:type="commands:Command" xmi:id="_8PjSoFjAEeKTlqeE1HNXCQ" elementId="org.modelio.diagrams.symbol.ResetCommandID" commandName="Reset Style"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_RFrM8FjBEeKTlqeE1HNXCQ" featurename="categories" parentElementId="org.modelio.app.application">
+    <elements xsi:type="commands:Category" xmi:id="_DDdPYFjBEeKTlqeE1HNXCQ" elementId="org.modelio.diagrams.symbol.categoryID" name="Symbol commands category"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_SoDAEH9MEeK-XvSICEmsLA" featurename="children" parentElementId="org.modelio.app.ui.menu.views">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_TYGkAH9MEeK-XvSICEmsLA" elementId="org.modelio.diagram.symbol.menuitem.showview" label="%SymbolShowView.label" iconURI="platform:/plugin/org.modelio.diagram.symbol/icons/propertyView.png" tooltip="%SymbolShowView.tooltip" command="_POg4cH9MEeK-XvSICEmsLA">
+      <parameters xmi:id="_UE5YkH9MEeK-XvSICEmsLA" elementId="org.modelio.app.ui.command.showview.viewid" name="org.modelio.app.ui.command.showview.viewid" value="org.modelio.diagram.symbol.SymbolViewID"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_cPHKAN_NEeKYSOCeOIScJg" featurename="children" parentElementId="org.modelio.app.bottom.parts">
+    <elements xsi:type="advanced:Placeholder" xmi:id="_d_VxgN_NEeKYSOCeOIScJg" elementId="diagram.symbol.placeholder.0" ref="_h_BtgFiyEeKw4Kse-CvnOQ"/>
+  </fragments>
+</fragment:ModelFragments>

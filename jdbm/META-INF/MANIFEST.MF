@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jdbm
+Bundle-SymbolicName: jdbm
+Bundle-Version: 3.2.1.qualifier
+Bundle-ClassPath: jdbm-2.4.jar,
+ .
+Export-Package: jdbm,
+ jdbm.btree,
+ jdbm.helper,
+ jdbm.htree,
+ jdbm.recman
+Eclipse-BuddyPolicy: dependent
