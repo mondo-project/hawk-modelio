@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_MzwjcI4sEeGhiYrv9jYZww">
-  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4UQpIECsEeOUVsope9yMlA" featurename="children" parentElementId="model.browser.popupmenu.0" positionInList="">
-    <elements xsi:type="menu:Menu" xmi:id="_-a-vwECsEeOUVsope9yMlA" elementId="org.modelio.admtool.menu" label="%AdmTool.Admin.label" iconURI="platform:/plugin/org.modelio.admtool/icons/admin.png">
-      <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_Ab8h8ECtEeOUVsope9yMlA" coreExpressionId="admtool.definition.adminmode"/>
-      <children xsi:type="menu:DirectMenuItem" xmi:id="_1KlLMEJIEeOHacJWo_YEUQ" elementId="admtool.directmenuitem.0" visible="false" contributionURI="bundleclass://org.modelio.admtool/org.modelio.admtool.plugin.AdminModeTester"/>
-    </elements>
-  </fragments>
-</fragment:ModelFragments>
